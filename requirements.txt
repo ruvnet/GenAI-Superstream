@@ -1,0 +1,6 @@
+scikit-learn>=1.0.0
+gradio[mcp]>=4.0.0
+mcp>=0.1.0
+numpy>=1.20.0
+pytest>=7.0.0
+pyyaml>=6.0.0
