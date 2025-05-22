@@ -1,0 +1,1331 @@
+2025-05-22 18:08:59,166 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:09:12,110 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:09:12,112 - advanced.perplexity.client - INFO - PerplexityClient initialized with server: perplexityai, URL: http://localhost:3001
+2025-05-22 18:09:12,112 - __main__ - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:09:12,112 - __main__ - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:09:12,112 - __main__ - INFO - Starting operation: Database initialization
+2025-05-22 18:09:12,112 - __main__ - INFO - Starting operation: Database initialization
+2025-05-22 18:09:12,112 - __main__ - INFO - Would create the following tables:
+2025-05-22 18:09:12,112 - __main__ - INFO - Would create the following tables:
+2025-05-22 18:09:12,112 - __main__ - INFO -   - job_postings
+2025-05-22 18:09:12,112 - __main__ - INFO -   - job_postings
+2025-05-22 18:09:12,113 - __main__ - INFO -   - job_skills
+2025-05-22 18:09:12,113 - __main__ - INFO -   - job_skills
+2025-05-22 18:09:12,113 - __main__ - INFO -   - companies
+2025-05-22 18:09:12,113 - __main__ - INFO -   - companies
+2025-05-22 18:09:12,113 - __main__ - INFO -   - job_history
+2025-05-22 18:09:12,113 - __main__ - INFO -   - job_history
+2025-05-22 18:09:12,113 - __main__ - INFO -   - ai_impact_metrics
+2025-05-22 18:09:12,113 - __main__ - INFO -   - ai_impact_metrics
+2025-05-22 18:09:12,113 - __main__ - INFO -   - perplexity_data_sources
+2025-05-22 18:09:12,113 - __main__ - INFO -   - perplexity_data_sources
+2025-05-22 18:09:12,113 - __main__ - INFO -   - data_quality_metrics
+2025-05-22 18:09:12,113 - __main__ - INFO -   - data_quality_metrics
+2025-05-22 18:09:12,113 - __main__ - INFO - Would create indexes for optimized querying
+2025-05-22 18:09:12,113 - __main__ - INFO - Would create indexes for optimized querying
+2025-05-22 18:09:12,113 - __main__ - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:09:12,113 - __main__ - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:09:28,786 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:09:28,788 - advanced.perplexity.client - INFO - PerplexityClient initialized with server: perplexityai, URL: http://localhost:3001
+2025-05-22 18:09:28,788 - __main__ - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:09:28,788 - __main__ - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:09:28,788 - __main__ - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:09:28,788 - __main__ - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:09:28,788 - __main__ - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:09:28,788 - __main__ - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:09:28,788 - __main__ - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Machine Learning Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:09:28,788 - __main__ - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Machine Learning Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:09:28,789 - __main__ - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:09:28,789 - __main__ - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:09:28,789 - __main__ - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Machine Learning Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:09:28,789 - __main__ - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Machine Learning Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:09:28,789 - __main__ - INFO -   Batch size: 10
+2025-05-22 18:09:28,789 - __main__ - INFO -   Batch size: 10
+2025-05-22 18:09:28,789 - __main__ - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:09:28,789 - __main__ - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:18:37,286 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:18:37,289 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:18:37,290 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:18:37,292 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:18:37,300 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:18:37,302 - advanced.perplexity.data_processor - INFO - Extracted job entry from JSON object
+2025-05-22 18:18:37,307 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:18:37,308 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:18:37,310 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:18:37,312 - advanced.perplexity.data_processor - INFO - Extracted 3 job entries from unstructured text
+2025-05-22 18:18:37,314 - advanced.perplexity.data_processor - INFO - Extracted 1 job entries from unstructured text
+2025-05-22 18:18:37,315 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:18:37,323 - advanced.perplexity.data_processor - ERROR - Failed to transform job data: argument of type 'NoneType' is not iterable
+2025-05-22 18:18:37,474 - advanced.perplexity.data_processor - INFO - Prepared 1 job postings for DuckDB insertion
+2025-05-22 18:18:37,476 - advanced.perplexity.data_processor - INFO - Extracted 2 skills records for DuckDB insertion
+2025-05-22 18:18:37,477 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:18:37,477 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:18:37,477 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:18:37,478 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:18:37,478 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:18:37,478 - advanced.perplexity.data_processor - INFO - Prepared 0 job postings for DuckDB insertion
+2025-05-22 18:18:37,479 - advanced.perplexity.data_processor - INFO - Extracted 0 skills records for DuckDB insertion
+2025-05-22 18:18:37,483 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:18:37,483 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:18:37,483 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:18:37,483 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:18:37,483 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:18:37,484 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: test
+2025-05-22 18:18:37,485 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:18:37,485 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:18:37,485 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:18:37,485 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:19:35,883 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:19:35,885 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:19:35,889 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:19:35,891 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:19:35,903 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:19:35,905 - advanced.perplexity.data_processor - INFO - Extracted job entry from JSON object
+2025-05-22 18:19:35,912 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:19:35,916 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:19:35,923 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:19:35,925 - advanced.perplexity.data_processor - INFO - Extracted 3 job entries from unstructured text
+2025-05-22 18:19:35,926 - advanced.perplexity.data_processor - INFO - Extracted 1 job entries from unstructured text
+2025-05-22 18:19:35,930 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:19:35,946 - advanced.perplexity.data_processor - ERROR - Failed to transform job data: argument of type 'NoneType' is not iterable
+2025-05-22 18:19:36,011 - advanced.perplexity.data_processor - INFO - Prepared 1 job postings for DuckDB insertion
+2025-05-22 18:19:36,013 - advanced.perplexity.data_processor - INFO - Extracted 2 skills records for DuckDB insertion
+2025-05-22 18:19:36,015 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:19:36,015 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:19:36,015 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:19:36,016 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:19:36,016 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:19:36,017 - advanced.perplexity.data_processor - INFO - Prepared 0 job postings for DuckDB insertion
+2025-05-22 18:19:36,017 - advanced.perplexity.data_processor - INFO - Extracted 0 skills records for DuckDB insertion
+2025-05-22 18:19:36,022 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:19:36,022 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:19:36,022 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:19:36,022 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:19:36,023 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:19:36,024 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: test
+2025-05-22 18:19:36,025 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:19:36,025 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:19:36,025 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:19:36,025 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:21:08,133 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:21:08,150 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:21:08,155 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:21:08,156 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:21:08,156 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:21:08,156 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:21:08,156 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:21:08,268 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:21:08,269 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:21:08,269 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:21:08,269 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:21:08,269 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:21:08,269 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:21:08,270 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:21:08,270 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:21:08,270 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:21:08,270 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:21:08,270 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:21:08,271 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:21:08,272 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:21:08,272 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:21:08,272 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:21:08,272 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:21:08,272 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:21:08,272 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:21:08,272 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:21:08,273 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:21:08,273 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:21:08,273 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:21:08,273 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:21:08,274 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:21:08,274 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:21:08,277 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:21:08,277 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:21:08,277 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:21:08,277 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.00 seconds
+2025-05-22 18:21:08,279 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:21:08,280 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:21:08,280 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:21:08,280 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:21:08,282 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:21:08,538 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:21:08,541 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.26 seconds
+2025-05-22 18:21:08,595 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:21:08,595 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:21:08,596 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:21:08,599 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:21:08,599 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:21:08,599 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:21:08,602 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:21:08,602 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:21:08,603 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:21:08,603 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:21:08,611 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:21:08,611 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:21:08,616 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:21:08,631 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:21:08,636 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:21:08,643 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:21:08,643 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:21:08,647 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:21:08,647 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:21:08,892 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:21:08,893 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:21:08,893 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:21:08,893 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:21:08,894 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:21:08,894 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:21:08,894 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:21:08,894 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:21:08,895 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:21:08,895 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:21:08,895 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:21:08,895 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:21:08,896 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:21:08,896 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:21:08,896 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:21:08,896 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:21:08,896 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:21:08,896 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:21:08,897 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:21:08,897 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:21:08,897 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:21:08,898 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:21:08,899 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='127655612743120'>
+2025-05-22 18:21:08,899 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:21:08,900 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:21:08,900 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:21:08,900 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:21:08,927 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:21:08,927 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:21:08,928 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:21:08,928 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:22:35,010 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:22:35,024 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:22:35,028 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:22:35,028 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:22:35,028 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:22:35,029 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:22:35,029 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:22:35,033 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:22:35,034 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:22:35,034 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:22:35,034 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:22:35,034 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:22:35,034 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:22:35,035 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:22:35,035 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:22:35,036 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:22:35,036 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:22:35,036 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:22:35,036 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:22:35,038 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:22:35,038 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:22:35,038 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:22:35,038 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:22:35,038 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:22:35,038 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:22:35,038 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:22:35,039 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:22:35,040 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:22:35,040 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:22:35,040 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:22:35,040 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:22:35,040 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:22:35,049 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:22:35,049 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:22:35,049 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:22:35,050 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.00 seconds
+2025-05-22 18:22:35,054 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:22:35,054 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:22:35,054 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:22:35,054 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:22:35,063 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:22:35,081 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:22:35,083 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.02 seconds
+2025-05-22 18:22:35,295 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:22:35,296 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:22:35,296 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:22:35,296 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:22:35,296 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:22:35,296 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:22:35,296 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:22:35,296 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:22:35,296 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:22:35,297 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:22:35,297 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:22:35,297 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:22:35,299 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:22:35,299 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:22:35,300 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:22:35,303 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:22:35,303 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:22:35,303 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:22:35,304 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:22:35,320 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:22:35,320 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:22:35,326 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:22:35,333 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:22:35,335 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:22:35,338 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:22:35,338 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:22:35,340 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:22:35,340 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:22:35,368 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:22:35,369 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:22:35,369 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:22:35,369 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:22:35,369 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:22:35,369 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:22:35,369 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:22:35,369 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:22:35,370 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:22:35,371 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:22:35,371 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:22:35,371 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:22:35,371 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:22:35,371 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:22:35,372 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='133456999687872'>
+2025-05-22 18:22:35,373 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:22:35,373 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:22:35,373 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:22:35,373 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:22:35,379 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:22:35,379 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:22:35,379 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:22:35,380 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:23:20,393 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:24:38,725 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:24:50,015 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:24:50,031 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:24:50,035 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:24:50,035 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:24:50,035 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:24:50,035 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:24:50,035 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:24:50,039 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:24:50,040 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:24:50,040 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:24:50,040 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:24:50,040 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:24:50,040 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:24:50,041 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:24:50,041 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:24:50,041 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:24:50,041 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:24:50,041 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:24:50,042 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:24:50,043 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:24:50,043 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:24:50,043 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:24:50,043 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:24:50,043 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:24:50,043 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:24:50,043 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:24:50,044 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:24:50,045 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:24:50,045 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:24:50,045 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:24:50,045 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:24:50,045 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:24:50,049 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:24:50,049 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:24:50,049 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:24:50,049 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.00 seconds
+2025-05-22 18:24:50,051 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:24:50,051 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:24:50,051 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:24:50,052 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:24:50,055 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:24:50,071 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:24:50,076 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.02 seconds
+2025-05-22 18:24:50,103 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:24:50,103 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:24:50,103 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:24:50,103 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:24:50,103 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:24:50,104 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:24:50,104 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:24:50,104 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:24:50,104 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:24:50,104 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:24:50,104 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:24:50,104 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:24:50,106 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:24:50,107 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:24:50,107 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:24:50,110 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:24:50,110 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:24:50,110 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:24:50,110 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:24:50,122 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:24:50,123 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:24:50,127 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:24:50,132 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:24:50,135 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:24:50,137 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:24:50,138 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:24:50,140 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:24:50,140 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:24:50,147 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:24:50,148 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:24:50,148 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:24:50,148 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:24:50,148 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:24:50,148 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:24:50,149 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:24:50,149 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:24:50,149 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:24:50,149 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:24:50,149 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:24:50,149 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:24:50,149 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:24:50,149 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:24:50,150 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:24:50,150 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:24:50,151 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:24:50,151 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:24:50,151 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:24:50,151 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:24:50,151 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:24:50,152 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:24:50,153 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='140719793280960'>
+2025-05-22 18:24:50,153 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:24:50,154 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:24:50,154 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:24:50,155 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:24:50,164 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:24:50,164 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:24:50,165 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:24:50,165 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:25:00,222 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:25:00,470 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:25:00,474 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:25:00,475 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:25:00,475 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:25:00,475 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:25:00,475 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:25:00,481 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:25:00,481 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:25:00,481 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:25:00,481 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:25:00,481 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:25:00,482 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:25:00,483 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:25:00,483 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:25:00,484 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:25:00,484 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:25:00,484 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:25:00,484 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:25:00,485 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:25:00,486 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:25:00,486 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:25:00,486 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:25:00,486 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:25:00,486 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:25:00,486 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:25:00,488 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:25:00,488 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:25:00,488 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:25:00,488 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:25:00,489 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:25:00,489 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:25:00,494 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:25:00,494 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:25:00,495 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:25:00,495 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.00 seconds
+2025-05-22 18:25:00,497 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:25:00,498 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:25:00,498 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:25:00,498 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:25:00,505 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:25:00,545 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:25:00,549 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.04 seconds
+2025-05-22 18:25:00,562 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:25:00,562 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:25:00,562 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:25:00,562 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:25:00,563 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:25:00,563 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:25:00,563 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:25:00,563 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:25:00,563 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:25:00,563 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:25:00,563 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:25:00,563 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:25:00,566 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:25:00,566 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:25:00,566 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:25:00,570 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:25:00,570 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:25:00,570 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:25:00,570 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:25:00,580 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:25:00,580 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:25:00,585 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:25:00,591 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:25:00,594 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:25:00,596 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:25:00,597 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:25:00,599 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:25:00,599 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:25:00,603 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:25:00,603 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:25:00,603 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:25:00,603 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:25:00,604 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:25:00,604 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:25:00,604 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:25:00,604 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:25:00,604 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:25:00,604 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:25:00,604 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:25:00,604 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:25:00,605 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:25:00,605 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:25:00,605 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:25:00,605 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:25:00,605 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:25:00,605 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:25:00,605 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:25:00,605 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:25:00,606 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:25:00,606 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:25:00,607 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='138729659611760'>
+2025-05-22 18:25:00,607 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:25:00,608 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:25:00,608 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:25:00,608 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:25:00,615 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:25:00,615 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:25:00,616 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:25:00,616 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:25:00,622 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:25:00,623 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:25:00,625 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:25:00,626 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:25:00,632 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:25:00,635 - advanced.perplexity.data_processor - INFO - Extracted job entry from JSON object
+2025-05-22 18:25:00,640 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:25:00,644 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:25:00,648 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:25:00,651 - advanced.perplexity.data_processor - INFO - Extracted 3 job entries from unstructured text
+2025-05-22 18:25:00,654 - advanced.perplexity.data_processor - INFO - Extracted 1 job entries from unstructured text
+2025-05-22 18:25:00,657 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:25:00,663 - advanced.perplexity.data_processor - ERROR - Failed to transform job data: argument of type 'NoneType' is not iterable
+2025-05-22 18:25:00,696 - advanced.perplexity.data_processor - INFO - Prepared 1 job postings for DuckDB insertion
+2025-05-22 18:25:00,697 - advanced.perplexity.data_processor - INFO - Extracted 2 skills records for DuckDB insertion
+2025-05-22 18:25:00,699 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:25:00,699 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:25:00,699 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:25:00,699 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:25:00,699 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:25:00,700 - advanced.perplexity.data_processor - INFO - Prepared 0 job postings for DuckDB insertion
+2025-05-22 18:25:00,701 - advanced.perplexity.data_processor - INFO - Extracted 0 skills records for DuckDB insertion
+2025-05-22 18:25:00,704 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:25:00,704 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:25:00,705 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:25:00,705 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:25:00,705 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:25:00,706 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: test
+2025-05-22 18:25:00,706 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:25:00,707 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:25:00,707 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:25:00,707 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:26:37,878 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:26:38,274 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:26:38,280 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:26:38,281 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:26:38,281 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:26:38,282 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:26:38,282 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:26:38,290 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:26:38,291 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:26:38,291 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:26:38,291 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:26:38,291 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:26:38,292 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:26:38,294 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:26:38,294 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:26:38,294 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:26:38,295 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:26:38,295 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:26:38,295 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:26:38,297 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:26:38,298 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:26:38,298 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:26:38,298 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:26:38,298 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:26:38,299 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:26:38,299 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:26:38,302 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:26:38,302 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:26:38,302 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:26:38,302 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:26:38,303 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:26:38,303 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:26:38,311 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:26:38,311 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:26:38,311 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:26:38,312 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.00 seconds
+2025-05-22 18:26:38,316 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:26:38,316 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:26:38,316 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:26:38,317 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:26:38,326 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:26:38,382 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:26:38,385 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.06 seconds
+2025-05-22 18:26:38,418 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:26:38,421 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:26:38,421 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:26:38,424 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:26:38,424 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:26:38,424 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:26:38,425 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:26:38,425 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:26:38,425 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:26:38,425 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:26:38,425 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:26:38,426 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.01 seconds
+2025-05-22 18:26:38,431 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:26:38,431 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:26:38,432 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:26:38,439 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:26:38,442 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:26:38,442 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:26:38,442 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:26:38,471 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:26:38,471 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:26:38,493 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:26:38,526 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:26:38,532 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:26:38,540 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:26:38,541 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:26:38,550 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:26:38,551 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:26:38,565 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:26:38,566 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:26:38,566 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:26:38,567 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:26:38,567 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:26:38,567 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:26:38,567 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:26:38,568 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:26:38,569 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:26:38,569 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:26:38,570 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:26:38,570 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:26:38,571 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:26:38,571 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:26:38,572 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:26:38,572 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:26:38,572 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:26:38,572 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:26:38,573 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:26:38,573 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:26:38,573 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.01 seconds
+2025-05-22 18:26:38,574 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:26:38,576 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='139678908969856'>
+2025-05-22 18:26:38,577 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:26:38,577 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:26:38,578 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:26:38,578 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:26:38,589 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:26:38,589 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:26:38,589 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:26:38,590 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:26:38,611 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:26:38,618 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:26:38,625 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:26:38,633 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:26:38,662 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:26:38,669 - advanced.perplexity.data_processor - INFO - Extracted job entry from JSON object
+2025-05-22 18:26:38,685 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:26:38,692 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:26:38,696 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:26:38,699 - advanced.perplexity.data_processor - INFO - Extracted 3 job entries from unstructured text
+2025-05-22 18:26:38,702 - advanced.perplexity.data_processor - INFO - Extracted 1 job entries from unstructured text
+2025-05-22 18:26:38,705 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:26:38,721 - advanced.perplexity.data_processor - ERROR - Failed to transform job data: argument of type 'NoneType' is not iterable
+2025-05-22 18:26:38,847 - advanced.perplexity.data_processor - INFO - Prepared 1 job postings for DuckDB insertion
+2025-05-22 18:26:38,853 - advanced.perplexity.data_processor - INFO - Extracted 2 skills records for DuckDB insertion
+2025-05-22 18:26:38,857 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:26:38,857 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:26:38,859 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:26:38,859 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:26:38,859 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:26:38,861 - advanced.perplexity.data_processor - INFO - Prepared 0 job postings for DuckDB insertion
+2025-05-22 18:26:38,865 - advanced.perplexity.data_processor - INFO - Extracted 0 skills records for DuckDB insertion
+2025-05-22 18:26:38,874 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:26:38,885 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:26:38,885 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:26:38,885 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:26:38,886 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:26:38,890 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: test
+2025-05-22 18:26:38,897 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:26:38,898 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:26:38,899 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:26:38,899 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:35:51,352 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:37:18,927 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:37:19,293 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:37:19,300 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:37:19,300 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:37:19,301 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:37:19,301 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:37:19,301 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:37:19,309 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:37:19,309 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:37:19,309 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:37:19,309 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:37:19,310 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:37:19,310 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:37:19,312 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:37:19,312 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:37:19,312 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:37:19,313 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:37:19,313 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:37:19,313 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:37:19,317 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:37:19,317 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:37:19,317 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:37:19,318 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:37:19,318 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:37:19,318 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:37:19,318 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:37:19,321 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:37:19,321 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:37:19,321 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:37:19,322 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:37:19,322 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:37:19,322 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:37:19,331 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:37:19,331 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:37:19,331 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:37:19,331 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.00 seconds
+2025-05-22 18:37:19,336 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:37:19,336 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:37:19,336 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:37:19,337 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:37:19,345 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:37:19,363 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:37:19,365 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.02 seconds
+2025-05-22 18:37:19,398 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:37:19,399 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:37:19,399 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:37:19,399 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:37:19,399 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:37:19,400 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:37:19,400 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:37:19,400 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:37:19,400 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:37:19,401 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:37:19,401 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:37:19,401 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:37:19,405 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:37:19,405 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:37:19,406 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:37:19,411 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:37:19,411 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:37:19,412 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:37:19,412 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:37:19,428 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:37:19,428 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:37:19,436 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:37:19,451 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:37:19,456 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:37:19,461 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:37:19,461 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:37:19,466 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:37:19,466 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:37:19,494 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:37:19,494 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:37:19,495 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:37:19,498 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:37:19,498 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:37:19,498 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:37:19,499 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:37:19,500 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:37:19,500 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:37:19,500 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:37:19,500 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:37:19,501 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:37:19,501 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:37:19,501 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:37:19,501 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:37:19,502 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:37:19,502 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:37:19,502 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:37:19,502 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:37:19,503 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:37:19,503 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.01 seconds
+2025-05-22 18:37:19,503 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:37:19,505 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='135954108245552'>
+2025-05-22 18:37:19,506 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:37:19,507 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:37:19,507 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:37:19,507 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:37:19,521 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:37:19,522 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:37:19,522 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:37:19,522 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:37:19,538 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:37:19,544 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:37:19,549 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:37:19,556 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:37:19,574 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:37:19,578 - advanced.perplexity.data_processor - INFO - Extracted job entry from JSON object
+2025-05-22 18:37:19,585 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:37:19,587 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:37:19,589 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:37:19,592 - advanced.perplexity.data_processor - INFO - Extracted 3 job entries from unstructured text
+2025-05-22 18:37:19,594 - advanced.perplexity.data_processor - INFO - Extracted 1 job entries from unstructured text
+2025-05-22 18:37:19,597 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:37:19,665 - advanced.perplexity.data_processor - ERROR - Failed to transform job data: argument of type 'NoneType' is not iterable
+2025-05-22 18:37:20,024 - advanced.perplexity.data_processor - INFO - Prepared 1 job postings for DuckDB insertion
+2025-05-22 18:37:20,029 - advanced.perplexity.data_processor - INFO - Extracted 2 skills records for DuckDB insertion
+2025-05-22 18:37:20,033 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:37:20,033 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:37:20,034 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:37:20,034 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:37:20,034 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:37:20,035 - advanced.perplexity.data_processor - INFO - Prepared 0 job postings for DuckDB insertion
+2025-05-22 18:37:20,036 - advanced.perplexity.data_processor - INFO - Extracted 0 skills records for DuckDB insertion
+2025-05-22 18:37:20,052 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:37:20,055 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:37:20,055 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:37:20,056 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:37:20,056 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:37:20,060 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: test
+2025-05-22 18:37:20,065 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:37:20,065 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:37:20,065 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:37:20,066 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:42:31,850 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:43:10,457 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:43:14,388 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:43:14,403 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:43:14,403 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:43:14,404 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:43:14,406 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:43:14,406 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:43:14,415 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:43:14,415 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:43:14,415 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:43:14,415 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:43:14,416 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:43:14,416 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:43:14,418 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:43:14,418 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:14,418 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:43:14,419 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:43:14,419 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:43:14,419 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:43:14,424 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:43:14,424 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:43:14,424 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:14,424 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:43:14,425 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:14,425 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:43:14,425 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:43:14,427 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:43:14,427 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:14,428 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:43:14,428 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:43:14,428 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:43:14,428 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:43:14,436 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:43:14,436 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:43:14,436 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:43:14,437 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.00 seconds
+2025-05-22 18:43:14,442 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:43:14,442 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:43:14,443 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:43:14,443 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:43:14,452 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:43:14,482 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:43:14,488 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.04 seconds
+2025-05-22 18:43:14,531 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:43:14,531 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:43:14,532 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:43:14,536 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:43:14,536 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:43:14,536 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:43:14,537 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:43:14,538 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:43:14,538 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:43:14,538 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:43:14,538 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:43:14,539 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.01 seconds
+2025-05-22 18:43:14,552 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:43:14,553 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:43:14,553 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:43:14,564 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:43:14,565 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:43:14,566 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:43:14,566 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:43:14,601 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:43:14,602 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:43:14,615 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:43:14,641 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:43:14,646 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:43:14,651 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:43:14,652 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:43:14,659 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:43:14,661 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:43:14,685 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:43:14,689 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:43:14,689 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:43:14,690 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:43:14,690 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:43:14,690 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:43:14,690 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:43:14,690 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:43:14,693 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:43:14,693 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:43:14,693 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:43:14,697 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:43:14,697 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:43:14,697 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:43:14,698 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:43:14,698 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:43:14,700 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:43:14,701 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:43:14,701 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:43:14,701 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:43:14,701 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.02 seconds
+2025-05-22 18:43:14,701 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:43:14,706 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='123763482247488'>
+2025-05-22 18:43:14,706 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:43:14,709 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:43:14,709 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:43:14,710 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.01 seconds
+2025-05-22 18:43:14,721 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:14,722 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:43:14,722 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:43:14,722 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:43:14,739 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:14,743 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:43:14,747 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:43:14,750 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:14,762 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:43:14,766 - advanced.perplexity.data_processor - INFO - Extracted job entry from JSON object
+2025-05-22 18:43:14,776 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:43:14,779 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:43:14,783 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:14,787 - advanced.perplexity.data_processor - INFO - Extracted 3 job entries from unstructured text
+2025-05-22 18:43:14,791 - advanced.perplexity.data_processor - INFO - Extracted 1 job entries from unstructured text
+2025-05-22 18:43:14,794 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:43:14,828 - advanced.perplexity.data_processor - ERROR - Failed to transform job data: argument of type 'NoneType' is not iterable
+2025-05-22 18:43:14,969 - advanced.perplexity.data_processor - INFO - Prepared 1 job postings for DuckDB insertion
+2025-05-22 18:43:14,972 - advanced.perplexity.data_processor - INFO - Extracted 2 skills records for DuckDB insertion
+2025-05-22 18:43:14,975 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:43:14,976 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:14,976 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:43:14,976 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:43:14,976 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:43:14,978 - advanced.perplexity.data_processor - INFO - Prepared 0 job postings for DuckDB insertion
+2025-05-22 18:43:14,979 - advanced.perplexity.data_processor - INFO - Extracted 0 skills records for DuckDB insertion
+2025-05-22 18:43:14,987 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:43:14,987 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:14,988 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:43:14,988 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:43:14,988 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:43:14,991 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: test
+2025-05-22 18:43:14,991 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:14,992 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:43:14,992 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:43:14,992 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:43:49,100 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:43:49,608 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:43:49,615 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:43:49,616 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:43:49,616 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:43:49,617 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:43:49,617 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:43:49,625 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:43:49,625 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:43:49,625 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:43:49,625 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:43:49,626 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:43:49,626 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:43:49,628 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:43:49,628 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:49,629 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:43:49,629 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:43:49,629 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:43:49,629 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:43:49,632 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:43:49,632 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:43:49,632 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:49,633 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:43:49,633 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:49,633 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:43:49,633 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:43:49,638 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:43:49,642 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:49,643 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:43:49,643 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:43:49,643 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:43:49,643 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.01 seconds
+2025-05-22 18:43:49,676 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:43:49,678 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:43:49,680 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:43:49,681 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.01 seconds
+2025-05-22 18:43:49,697 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:43:49,700 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:43:49,700 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:43:49,701 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:43:49,729 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:43:49,751 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:43:49,756 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.03 seconds
+2025-05-22 18:43:49,777 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:43:49,778 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:43:49,778 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:43:49,778 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:43:49,778 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:43:49,778 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:43:49,779 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:43:49,779 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:43:49,779 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:43:49,779 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:43:49,779 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:43:49,780 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:43:49,784 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:43:49,785 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:43:49,785 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:43:49,793 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:43:49,793 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:43:49,793 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:43:49,793 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:43:49,818 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:43:49,819 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:43:49,831 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:43:49,854 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:43:49,866 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:43:49,871 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:43:49,872 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:43:49,877 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:43:49,878 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:43:49,898 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:43:49,900 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:43:49,901 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:43:49,901 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:43:49,901 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:43:49,901 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:43:49,902 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:43:49,904 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:43:49,904 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:43:49,904 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:43:49,905 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:43:49,905 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:43:49,905 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:43:49,905 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:43:49,905 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:43:49,906 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:43:49,906 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:43:49,906 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:43:49,906 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:43:49,906 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:43:49,907 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.01 seconds
+2025-05-22 18:43:49,907 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:43:49,911 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='139506202528320'>
+2025-05-22 18:43:49,912 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:43:49,912 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:43:49,913 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:43:49,913 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.01 seconds
+2025-05-22 18:43:49,930 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:43:49,931 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:43:49,931 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:43:49,931 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:43:49,960 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:49,967 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:43:49,974 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:43:49,981 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:50,002 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:43:50,008 - advanced.perplexity.data_processor - INFO - Extracted job entry from JSON object
+2025-05-22 18:43:50,024 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:43:50,029 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:43:50,035 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:50,042 - advanced.perplexity.data_processor - INFO - Extracted 3 job entries from unstructured text
+2025-05-22 18:43:50,049 - advanced.perplexity.data_processor - INFO - Extracted 1 job entries from unstructured text
+2025-05-22 18:43:50,056 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:43:50,099 - advanced.perplexity.data_processor - ERROR - Failed to transform job data: argument of type 'NoneType' is not iterable
+2025-05-22 18:43:50,356 - advanced.perplexity.data_processor - INFO - Prepared 1 job postings for DuckDB insertion
+2025-05-22 18:43:50,360 - advanced.perplexity.data_processor - INFO - Extracted 2 skills records for DuckDB insertion
+2025-05-22 18:43:50,363 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:43:50,364 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:50,364 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:43:50,364 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:43:50,364 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:43:50,366 - advanced.perplexity.data_processor - INFO - Prepared 0 job postings for DuckDB insertion
+2025-05-22 18:43:50,367 - advanced.perplexity.data_processor - INFO - Extracted 0 skills records for DuckDB insertion
+2025-05-22 18:43:50,375 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:43:50,376 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:50,376 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:43:50,376 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:43:50,376 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:43:50,379 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: test
+2025-05-22 18:43:50,380 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:43:50,381 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:43:50,381 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:43:50,381 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:44:35,126 - advanced.db.connection - INFO - ConnectionManager initialized with database path: ./duckdb_advanced.db
+2025-05-22 18:44:35,457 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:44:35,467 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:44:35,467 - advanced.data_gatherer - INFO - Created/verified table from SQL: CREATE TABLE test_table (id INTEGER)...
+2025-05-22 18:44:35,467 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX test_idx ON test_table(id)
+2025-05-22 18:44:35,468 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:44:35,468 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.00 seconds
+2025-05-22 18:44:35,477 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:44:35,477 - advanced.data_gatherer - INFO - Using custom query: What are the latest AI jobs in London?
+2025-05-22 18:44:35,477 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:44:35,477 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:44:35,478 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:44:35,478 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:44:35,481 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:44:35,481 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on Data Scientist roles. Concentrate on jobs in Manchester. Provide data from last month. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:44:35,482 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:44:35,482 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:44:35,482 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:44:35,482 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:44:35,487 - advanced.data_gatherer - INFO - Running in dry-run mode - no changes will be made
+2025-05-22 18:44:35,487 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:44:35,487 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:44:35,487 - advanced.data_gatherer - INFO - Would send the following query to PerplexityAI:
+2025-05-22 18:44:35,488 - advanced.data_gatherer - INFO -   Query: What are the latest trends in AI technical jobs in the UK? Focus specifically on ML Engineer roles. Concentrate on jobs in London. Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:44:35,488 - advanced.data_gatherer - INFO -   Batch size: 10
+2025-05-22 18:44:35,488 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:44:35,493 - advanced.data_gatherer - INFO - Starting operation: Data gathering from PerplexityAI
+2025-05-22 18:44:35,493 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:44:35,493 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:44:35,493 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:44:35,493 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:44:35,494 - advanced.data_gatherer - INFO - Operation Data gathering from PerplexityAI completed in 0.00 seconds
+2025-05-22 18:44:35,507 - advanced.data_gatherer - INFO - Starting operation: Processing PerplexityAI response
+2025-05-22 18:44:35,507 - advanced.data_gatherer - INFO - Parsed 0 job entries from response
+2025-05-22 18:44:35,508 - advanced.data_gatherer - INFO - Transformed 0 job postings
+2025-05-22 18:44:35,508 - advanced.data_gatherer - INFO - Operation Processing PerplexityAI response completed in 0.00 seconds
+2025-05-22 18:44:35,514 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:44:35,515 - advanced.data_gatherer - ERROR - Failed to insert job TEST-001: 'str' object has no attribute 'value'
+2025-05-22 18:44:35,515 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:44:35,516 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:44:35,527 - advanced.data_gatherer - INFO - Starting operation: Inserting 0 jobs to database
+2025-05-22 18:44:35,559 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 0 jobs
+2025-05-22 18:44:35,562 - advanced.data_gatherer - INFO - Operation Inserting 0 jobs to database completed in 0.03 seconds
+2025-05-22 18:44:35,585 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:44:35,586 - advanced.data_gatherer - INFO - Total job postings: 10
+2025-05-22 18:44:35,586 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:44:35,586 - advanced.data_gatherer - INFO -   - high: 6
+2025-05-22 18:44:35,586 - advanced.data_gatherer - INFO -   - medium: 4
+2025-05-22 18:44:35,587 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:44:35,587 - advanced.data_gatherer - INFO -   - TechCorp: 3
+2025-05-22 18:44:35,587 - advanced.data_gatherer - INFO -   - AIStart: 2
+2025-05-22 18:44:35,587 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:44:35,588 - advanced.data_gatherer - INFO -   - Python: 8
+2025-05-22 18:44:35,588 - advanced.data_gatherer - INFO -   - TensorFlow: 5
+2025-05-22 18:44:35,588 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:44:35,593 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:44:35,594 - advanced.data_gatherer - INFO - Total job postings: 0
+2025-05-22 18:44:35,594 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:44:35,600 - advanced.data_gatherer - INFO - Starting operation: Inserting 1 jobs to database
+2025-05-22 18:44:35,601 - advanced.data_gatherer - ERROR - Failed to insert job None: Mock object has no attribute 'title'
+2025-05-22 18:44:35,601 - advanced.data_gatherer - INFO - Successfully inserted 0 out of 1 jobs
+2025-05-22 18:44:35,602 - advanced.data_gatherer - INFO - Operation Inserting 1 jobs to database completed in 0.00 seconds
+2025-05-22 18:44:35,621 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:44:35,621 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:44:35,633 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:44:35,648 - advanced.data_gatherer - INFO - Operation cancelled by user
+2025-05-22 18:44:35,654 - advanced.data_gatherer - ERROR - Error during execution: Test error
+2025-05-22 18:44:35,659 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:44:35,660 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:44:35,665 - advanced.data_gatherer - INFO - Gathering data from PerplexityAI...
+2025-05-22 18:44:35,665 - advanced.data_gatherer - WARNING - Note: Actual PerplexityAI integration requires MCP tool execution. Please use the prepared query parameters with the MCP system.
+2025-05-22 18:44:35,678 - advanced.data_gatherer - INFO - Starting operation: Database initialization
+2025-05-22 18:44:35,679 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_postings (
+    job...
+2025-05-22 18:44:35,679 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_skills (
+    id IN...
+2025-05-22 18:44:35,679 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS companies (
+    compan...
+2025-05-22 18:44:35,679 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS job_history (
+    hist...
+2025-05-22 18:44:35,680 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS ai_impact_metrics (
+  ...
+2025-05-22 18:44:35,680 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS perplexity_data_source...
+2025-05-22 18:44:35,680 - advanced.data_gatherer - INFO - Created/verified table from SQL: 
+CREATE TABLE IF NOT EXISTS data_quality_metrics (...
+2025-05-22 18:44:35,680 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_title ON job_postings(title)
+2025-05-22 18:44:35,681 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_company ON job_postings(company)
+2025-05-22 18:44:35,681 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_location ON job_postings(location)
+2025-05-22 18:44:35,682 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_date_posted ON job_postings(date_posted)
+2025-05-22 18:44:35,682 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact ON job_postings(ai_impact)
+2025-05-22 18:44:35,683 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_remote_work ON job_postings(remote_work)
+2025-05-22 18:44:35,683 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_seniority_level ON job_postings(seniority_level)
+2025-05-22 18:44:35,683 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_job_id ON job_skills(job_id)
+2025-05-22 18:44:35,683 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_job_skills_skill_name ON job_skills(skill_name)
+2025-05-22 18:44:35,684 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_metrics_job_id ON ai_impact_metrics(job_id)
+2025-05-22 18:44:35,684 - advanced.data_gatherer - INFO - Created/verified index: CREATE INDEX IF NOT EXISTS idx_ai_impact_category ON job_postings(ai_impact_category)
+2025-05-22 18:44:35,684 - advanced.data_gatherer - INFO - Database initialization completed successfully
+2025-05-22 18:44:35,684 - advanced.data_gatherer - INFO - Operation Database initialization completed in 0.01 seconds
+2025-05-22 18:44:35,685 - advanced.data_gatherer - INFO - Starting operation: Fetching database statistics
+2025-05-22 18:44:35,687 - advanced.data_gatherer - INFO - Total job postings: <MagicMock name='mock.fetch_all().__getitem__().__getitem__()' id='137642843052592'>
+2025-05-22 18:44:35,688 - advanced.data_gatherer - INFO - Jobs by AI impact category:
+2025-05-22 18:44:35,689 - advanced.data_gatherer - INFO - Top 5 companies by job postings:
+2025-05-22 18:44:35,689 - advanced.data_gatherer - INFO - Top 10 skills:
+2025-05-22 18:44:35,689 - advanced.data_gatherer - INFO - Operation Fetching database statistics completed in 0.00 seconds
+2025-05-22 18:44:35,704 - advanced.data_gatherer - INFO - Generated query: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job titles, companies, locations, salary ranges, job descriptions, AI impact metrics, posting dates, and data sources. Structure your response as a table or easily parsable format for database insertion.
+2025-05-22 18:44:35,705 - advanced.data_gatherer - INFO - Query parameters prepared for PerplexityAI MCP tool
+2025-05-22 18:44:35,705 - advanced.data_gatherer - INFO - Server: perplexityai
+2025-05-22 18:44:35,705 - advanced.data_gatherer - INFO - Tool: PERPLEXITYAI_PERPLEXITY_AI_SEARCH
+2025-05-22 18:44:35,721 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:44:35,724 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:44:35,727 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:44:35,729 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:44:35,740 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from JSON data
+2025-05-22 18:44:35,743 - advanced.perplexity.data_processor - INFO - Extracted job entry from JSON object
+2025-05-22 18:44:35,751 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:44:35,754 - advanced.perplexity.data_processor - INFO - Extracted 2 job entries from key-value pairs
+2025-05-22 18:44:35,757 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:44:35,760 - advanced.perplexity.data_processor - INFO - Extracted 3 job entries from unstructured text
+2025-05-22 18:44:35,762 - advanced.perplexity.data_processor - INFO - Extracted 1 job entries from unstructured text
+2025-05-22 18:44:35,764 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:44:35,787 - advanced.perplexity.data_processor - ERROR - Failed to transform job data: argument of type 'NoneType' is not iterable
+2025-05-22 18:44:35,920 - advanced.perplexity.data_processor - INFO - Prepared 1 job postings for DuckDB insertion
+2025-05-22 18:44:35,925 - advanced.perplexity.data_processor - INFO - Extracted 2 skills records for DuckDB insertion
+2025-05-22 18:44:35,928 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:44:35,928 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:44:35,929 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:44:35,929 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:44:35,929 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:44:35,931 - advanced.perplexity.data_processor - INFO - Prepared 0 job postings for DuckDB insertion
+2025-05-22 18:44:35,932 - advanced.perplexity.data_processor - INFO - Extracted 0 skills records for DuckDB insertion
+2025-05-22 18:44:35,942 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: resp-123
+2025-05-22 18:44:35,942 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:44:35,943 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:44:35,943 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:44:35,943 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 18:44:35,947 - advanced.perplexity.data_processor - INFO - Processing PerplexityAI response with ID: test
+2025-05-22 18:44:35,947 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from key-value pairs
+2025-05-22 18:44:35,947 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
+2025-05-22 18:44:35,948 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
+2025-05-22 18:44:35,948 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response

@@ -132,3 +132,29 @@ The project is designed to be extended in several ways:
 The GenAI-Superstream project demonstrates how to leverage modern technologies to create an AI service that can be accessed both by humans through a web interface and by AI agents through the MCP protocol. The modular design ensures maintainability and extensibility, while the comprehensive documentation provides a solid foundation for implementation.
 
 By following the specifications and pseudocode in this documentation, developers can implement a fully functional MCP server that exposes a scikit-learn classifier, as well as a client that can interact with this server. The project serves as a template for more complex AI services that leverage the MCP protocol for AI agent integration.
+## FastMCP Cookiecutter Template Command Research
+
+No explicit documentation was found for a "fastmcp cookiecutter template command." However, Cookiecutter is a widely used CLI tool for generating projects from templates. Key usage patterns and best practices:
+
+- **Basic Command:**  
+  `cookiecutter https://github.com/your-template-repo.git`
+
+- **Common Options:**  
+  - `--no-input`: Run without prompts  
+  - `--overwrite-if-exists`: Overwrite existing output  
+  - `--replay`: Replay last session  
+  - `--config-file`: Specify config file
+
+- **Best Practices:**  
+  1. Define clear variables in `cookiecutter.json`
+  2. Test templates locally before sharing
+  3. Provide documentation for template users
+  4. Use version control for templates
+  5. Keep templates simple and focused
+
+For FastMCP, integration with Cookiecutter templates may involve using a FastMCP client, but no direct command is documented.
+
+References:  
+- [Cookiecutter CLI Options](https://cookiecutter.readthedocs.io/en/stable/cli_options.html)  
+- [Cookiecutter Docs](https://cookiecutter.readthedocs.io)  
+- [Example FastAPI Cookiecutter Template](https://github.com/arthurhenrique/cookiecutter-fastapi)

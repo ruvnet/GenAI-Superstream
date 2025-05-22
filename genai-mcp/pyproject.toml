@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genai-mcp"
+version = "0.0.1"
+description = "Genai SuperStream Demo"
+authors = [
+    { name = "rUv", email = "ruv@ruv.net" },
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["mcp>=1.0", "httpx>=0.24.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "black>=23.0", "isort>=5.0", "mypy>=1.0", "ruff>=0.2.0"]
+
+[tool.setuptools]
+packages = ["genai_mcp"]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+select = ["E", "F", "I"]

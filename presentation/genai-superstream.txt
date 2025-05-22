@@ -1,0 +1,112 @@
+GenAI Superstream
+Agentic Engineering for Data Analysis 
+rUv
+https://github.com/ruvnet/GenAI-Superstream 
+1
+
+Leading AI consultant Reuven Cohen tells you everything you need to know (but were afraid to ask) about agentic engineering.
+For data analysis, from introductions to more automated and advanced code generation, automated analysis, self-learning systems, and virtual employees.
+
+
+GenAI Superstream
+Agentic Engineering for Data Analysis 
+
+Early inventor of infrastructure as a service (2003)
+Thought-leader in Cloud Computing as the founder of one of the first cloud companies.
+Project CTO - Led the planning, architecture and development of EY.ai ($1.4B budget, 400k users)
+Part of the first group of Alpha Testers for OpenAi. Codex (May ‘22) GPT-3.5 (Nov) GPT-4 (Feb ‘23) Plug-in Alpha (April), MS365 Co-pilot (Aug)
+Husband to Brenda, his most trusted advisor, and father of three amazing children
+Consulting with rUv
+
+Define: Agentics/əˈdʒentɪks/ (noun)
+PACT: Proactive, Autonomous, Collaborative, and Targeted 
+Proactive 
+Anticipating and initiating changes
+
+
+Autonomous
+Operating independently
+
+
+Targeted
+Pursuing defined objectives
+
+
+
+Collaborative
+Working effectively with other systems or agents
+The field of study and engineering practice focused on creating intelligent systems that are:
+Origin: Early 21st century: from 'agent' (in the context of artificial intelligence) + '-ics' (denoting a field of study).
+
+
+
+Vibe Coding 
+Crafting code by feel, balancing functionality with readability, style and project mood
+Core Principles
+Rapid iteration guided by intuitive feedback
+Emphasis on clean, expressive naming and structure
+Aligning code style with team culture and project “vibe”
+Benefits
+Faster prototyping with fewer mental blocks
+Code that feels approachable and motivates collaboration
+Encourages consistency through shared aesthetic standards
+
+Vibe Coding vs Agentic Engineering
+Agentic Engineering and Vibe Coding are different ways to interact, create and develop with AI. 
+Vibe Coding
+Flow
+Fluid and Intuitive
+Little Process
+Human is the feedback loop
+Ideation and Discovery
+
+Agentic Engineering
+Structured 
+Process Driven
+Deep Planning / Test Driven
+Machine is feedback loop
+Iteration and refinement
+
+THE AGENTIC SPECTRUM 
+
+Introduction to SPARC Methodology
+The SPARC Framework is a comprehensive methodology designed to guide the development of robust and scalable applications. 
+SPARC stands for Specification, Pseudocode, Architecture, Refinement, and Completion. 
+Each step ensures thorough planning, execution, and reflection throughout the project lifecycle.
+
+
+Install ‘npx create-sparc’
+
+
+Model Context Protocol (MCP)
+MCP is the new API. Simple, composable, and totally abstracted. It turns any tool into a native function any model can call.
+Open standard for LLM-tool integrationSecure, two-way connections between models and external tools
+Plug-and-play “USB-C for AI”Any CLI or script becomes a native function in one generate_content call
+Zero-friction developer experienceNo hosting, schema work, or glue code, just wrap over stdio or SSE
+Unix mindset applied to AISmall, composable tools embedded in the model’s reasoning loop
+Built-in guardrailsSandboxing, input validation, and strict command boundaries
+
+Vibe Data Engineering
+https://github.com/ruvnet/GenAI-Superstream  
+
+VSCode
+Roo Code
+Install ‘npx create-sparc’
+Vibe Data Engineering Tools
+1. Prerequisites
+Node.js ≥ 14.x installed
+npm (bundled with Node.js)
+VS Code installed
+Roo Code extension available2. Install Roo Code Extension
+Open VS Code
+Go to Extensions view
+Search for Roo Code / Click Install
+
+
+
+Get in touch with me:
+ruv@ruv.net
+https://www.linkedin.com/in/reuvencohen
+https://github.com/ruvnet/ 
+Get in touch with rUv 
+https://github.com/ruvnet/GenAI-Superstream 
