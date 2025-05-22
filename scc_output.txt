@@ -1,0 +1,40 @@
+───────────────────────────────────────────────────────────────────────────────
+Language                 Files     Lines   Blanks  Comments     Code Complexity
+───────────────────────────────────────────────────────────────────────────────
+Python                      22      3675      497       939     2239        294
+───────────────────────────────────────────────────────────────────────────────
+advanced/db/queries.py               465       66       122      277         64
+~dvanced/perplexity/parsers.py       456       68       117      271         98
+db/init_duckdb.py                    374       32       106      236         39
+advanced/models/schemas.py           223       18        16      189          0
+~vanced/models/data_classes.py       234       39        26      169         16
+advanced/main.py                     260       39        60      161         21
+db/jobs_analytics_example.py         289       53        77      159         18
+~d/analytics/visualizations.py       288       58        86      144          7
+db/insert_ai_jobs_sqlite.py          112        3         3      106          2
+db/insert_ai_jobs_duckdb.py          110        3         3      104          2
+advanced/analytics/metrics.py        189       24        66       99          3
+advanced/db/connection.py            209       34        81       94         13
+advanced/perplexity/client.py        139       20        50       69          6
+advanced/config.py                    83       10        15       58          0
+advanced/utils/logging.py            138       29        53       56          4
+advanced/init_duckdb.py               70        0        29       41          1
+~dvanced/analytics/__init__.py         5        0         4        1          0
+advanced/__init__.py                   8        1         6        1          0
+advanced/utils/__init__.py             6        0         5        1          0
+advanced/models/__init__.py            6        0         5        1          0
+~vanced/perplexity/__init__.py         6        0         5        1          0
+advanced/db/__init__.py                5        0         4        1          0
+───────────────────────────────────────────────────────────────────────────────
+Markdown                     1       144       35         0      109          0
+───────────────────────────────────────────────────────────────────────────────
+db/README.md                         144       35         0      109          0
+───────────────────────────────────────────────────────────────────────────────
+Total                       23      3819      532       939     2348        294
+───────────────────────────────────────────────────────────────────────────────
+Estimated Cost to Develop (organic) $66,195
+Estimated Schedule Effort (organic) 4.90 months
+Estimated People Required (organic) 1.20
+───────────────────────────────────────────────────────────────────────────────
+Processed 132510 bytes, 0.133 megabytes (SI)
+───────────────────────────────────────────────────────────────────────────────

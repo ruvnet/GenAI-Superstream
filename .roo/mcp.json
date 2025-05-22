@@ -22,27 +22,21 @@
         "listProjects"
       ]
     },
-    "mem0": {
-      "url": "https://mcp.composio.dev/mem0/abandoned-creamy-horse-Y39-hm?agent=cursor"
-    },
     "perplexityai": {
       "url": "https://mcp.composio.dev/composio/server/639cb323-8245-493a-a808-7fdf217cc865",
       "alwaysAllow": [
         "PERPLEXITYAI_PERPLEXITY_AI_SEARCH"
       ]
     },
-    "genai-superstream-mcp-v1": {
-      "url": "http://127.0.0.1:7860/gradio_api/mcp/sse"
-    },
-    "genai-superstream-mcp-v2": {
-      "url": "https://8655a326ec6efdb754.gradio.live/mcp/sse"
-    },
-    "hello-world-mcp": {
-      "url": "http://localhost:7880/gradio_api/mcp/sse",
-      "description": "A simple Hello World MCP server",
+    "genai-mcp": {
+      "url": "http://127.0.0.1:8001/mcp",
       "alwaysAllow": [
-        "hello_world"
-      ]
+        "echo",
+        "calculate",
+        "long_task",
+        "fetch_data"
+      ],
+      "type": "sse"
     }
   }
 }

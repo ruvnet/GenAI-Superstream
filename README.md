@@ -1,137 +1,405 @@
 # GenAI-Superstream
-Agentic Engineering for Data Analysis 
 
-## Summary
+> Agentic Engineering for Data Analysis
 
-We will create a basic Model Context Protocol (MCP) server that exposes a scikit-learn classifier via Gradio’s built-in MCP capabilities. First, we’ll install the necessary Python packages and load the Iris dataset with scikit-learn. Then we’ll define a prediction function with a docstring that describes its inputs and outputs. Next, we’ll wrap that function in a Gradio Blocks app and launch it with `mcp_server=True`, which automatically exposes the function as an MCP tool. Finally, we’ll verify the MCP endpoint and demonstrate a simple Gradio client calling the tool. This end-to-end setup takes fewer than 20 lines of code and leverages Gradio’s seamless integration for both UI and tool-calling workflows ([Gradio][1], [Hugging Face][2]).
+## Table of Contents
 
-## Prerequisites
+- [Introduction](#introduction)
+- [Core Concepts](#core-concepts)
+  - [Agentics](#agentics)
+  - [Vibe Coding](#vibe-coding)
+  - [SPARC Methodology](#sparc-methodology)
+  - [Model Context Protocol (MCP)](#model-context-protocol-mcp)
+- [Project Implementation](#project-implementation)
+  - [DuckDB Overview](#duckdb-overview)
+  - [UK AI Jobs Data Analysis](#uk-ai-jobs-data-analysis)
+  - [Scikit-learn Integration](#scikit-learn-integration)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Tutorials](#tutorials)
+  - [Setting Up the DuckDB Database](#setting-up-the-duckdb-database)
+  - [Populating with Jobs Data](#populating-with-jobs-data)
+  - [Running Analytics](#running-analytics)
+  - [Using the CLI Tool](#using-the-cli-tool)
+- [Advanced Usage](#advanced-usage)
+  - [Custom Analytics](#custom-analytics)
+  - [Extending the Database](#extending-the-database)
+  - [Integration with Other Systems](#integration-with-other-systems)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-Before you begin, ensure you have:
+## Introduction
 
-* Python 3.10 or higher installed on your system. ([Gradio][3])
-* An environment where you can install packages via `pip`. ([Gradio][4])
+GenAI-Superstream is a project demonstrating Agentic Engineering and "Vibe Coding" principles for Data Science applications. Created by Reuven Cohen (rUv), this project showcases the integration of advanced AI-powered data analysis techniques with a focus on analyzing the impact of AI on technical jobs in the UK job market.
 
-## Step 1: Install Dependencies
+This implementation demonstrates how to use DuckDB (a high-performance analytical database) in combination with scikit-learn to collect, analyze, and visualize jobs data, with a particular focus on understanding how AI is transforming technical roles in the UK job market.
+
+## Core Concepts
+
+### Agentics
+
+Agentics (pronounced /əˈdʒentɪks/) is the field of study and engineering practice focused on creating intelligent systems that are:
+
+- **P**roactive: Anticipating and initiating changes
+- **A**utonomous: Operating independently
+- **C**ollaborative: Working effectively with other systems or agents
+- **T**argeted: Pursuing defined objectives
+
+This PACT framework guides the development of AI systems that can work alongside humans to solve complex problems.
+
+### Vibe Coding
+
+Vibe Coding is an approach to software development that emphasizes:
+
+- Crafting code by feel, balancing functionality with readability, style and project mood
+- Rapid iteration guided by intuitive feedback
+- Emphasis on clean, expressive naming and structure
+- Aligning code style with team culture and project "vibe"
+
+Benefits include:
+- Faster prototyping with fewer mental blocks
+- Code that feels approachable and motivates collaboration
+- Consistency through shared aesthetic standards
+
+### Vibe Coding vs Agentic Engineering
+
+| Vibe Coding | Agentic Engineering |
+|-------------|---------------------|
+| Flow | Structured |
+| Fluid and Intuitive | Process Driven |
+| Little Process | Deep Planning / Test Driven |
+| Human is the feedback loop | Machine is feedback loop |
+| Ideation and Discovery | Iteration and refinement |
+
+### SPARC Methodology
+
+SPARC is a comprehensive methodology designed to guide the development of robust and scalable applications. SPARC stands for:
+
+- **Specification**: Define clear objectives, detailed requirements, user scenarios, and UI/UX standards
+- **Pseudocode**: Map out logical implementation pathways before coding
+- **Architecture**: Design modular, maintainable system components using appropriate technology stacks
+- **Refinement**: Iteratively optimize code using autonomous feedback loops and stakeholder inputs
+- **Completion**: Conduct rigorous testing, finalize comprehensive documentation, and deploy structured monitoring strategies
+
+Each step ensures thorough planning, execution, and reflection throughout the project lifecycle.
+
+### Model Context Protocol (MCP)
+
+MCP (Model Context Protocol) is the new standard for LLM-tool integration:
+
+- Simple, composable, and totally abstracted
+- Turns any tool into a native function any model can call
+- Secure, two-way connections between models and external tools
+- Plug-and-play "USB-C for AI"
+- Zero-friction developer experience
+- Unix mindset applied to AI
+- Built-in guardrails
+
+## Project Implementation
+
+### DuckDB Overview
+
+DuckDB is a high-performance, in-process analytical database management system optimized for complex, large-scale analytical SQL queries. It is often described as "SQLite for analytics" due to its lightweight, easy integration and ability to run within the same process as the application without the need for a separate database server.
+
+Key features:
+- **Columnar-vectorized query execution engine**: Processes large batches of data at once
+- **Full SQL support**: Including complex queries and window functions
+- **Support for popular data formats**: CSV, Parquet, etc.
+- **ACID transactional guarantees**: Ensures data integrity
+- **Seamless Python integration**: Works with pandas DataFrames
+
+### UK AI Jobs Data Analysis
+
+This project uses DuckDB to analyze AI's impact on technical jobs in the UK. Key components:
+
+1. **Data Collection**: Gathering representative job postings from reliable sources
+2. **Data Storage**: Structured database schema optimized for analytics
+3. **Data Analysis**: SQL queries and scikit-learn integration for insights
+4. **Visualization**: Visual representation of trends and patterns
+
+The job data includes information such as:
+- Job titles and companies
+- Locations and salary ranges
+- Job descriptions
+- Metrics quantifying AI's impact on each role
+- Posting dates and sources
+
+### Scikit-learn Integration
+
+The project demonstrates how to integrate DuckDB with scikit-learn for advanced analytics:
+
+1. **Feature Engineering**: Extracting relevant features from job data
+2. **Clustering**: Identifying patterns and grouping similar jobs
+3. **Trend Analysis**: Tracking changes in AI impact over time
+4. **Visualization**: Creating insightful visualizations of the data
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.6+
+- pip (Python package manager)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ruvnet/GenAI-Superstream.git
+   cd GenAI-Superstream
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   pip install duckdb pandas numpy scikit-learn matplotlib tabulate
+   ```
+
+3. Optional: Install the Roo Code extension for VS Code:
+   - Open VS Code
+   - Go to Extensions view
+   - Search for Roo Code
+   - Click Install
+
+### Usage
+
+The project consists of several Python scripts that demonstrate different aspects of the system:
+
+- `db/init_duckdb.py`: Core database initialization and utility functions
+- `db/jobs_analytics_example.py`: Example analytics and visualization with scikit-learn
+- `db/insert_ai_jobs_duckdb.py`: Script to insert representative UK AI jobs data
+- `scripts/review_uk_jobs.py`: CLI tool to review and filter job data
+
+## Tutorials
+
+### Setting Up the DuckDB Database
+
+To initialize the DuckDB database with the proper schema:
+
+```python
+from db.init_duckdb import JobsDatabase
+
+# Create a new database instance
+db = JobsDatabase()
+
+# Initialize the schema
+db.initialize_schema()
+
+print("Database initialized successfully!")
+db.close()
+```
+
+### Populating with Jobs Data
+
+You can populate the database with UK AI jobs data using the PerplexityAI MCP integration in Roo Code. This approach leverages AI to gather the latest jobs data:
+
+#### Using PerplexityAI MCP
+
+1. First, configure the Composio PerplexityAI MCP in your project by creating an `mcp.json` file:
+
+```json
+{
+  "servers": {
+    "perplexityai": {
+      "url": "mcp.composio/your-key-url",
+      "tools": [
+        "PERPLEXITYAI_PERPLEXITY_AI_SEARCH"
+      ]
+    }
+  }
+}
+```
+
+2. In Roo Code, interact with the PerplexityAI service to research UK AI jobs data. Ask for structured information about how AI is affecting technical jobs in the UK, specifying that you need job titles, companies, locations, salaries, descriptions, AI impact metrics, posting dates, and sources. Request the data in a tabular format suitable for database ingestion.
+
+When crafting your query, use system instructions that request concise, technical responses with structured data formats. For the user content, specifically ask about the latest trends and data on AI's impact on technical jobs in the UK, emphasizing that you need complete job posting information with all required fields for your database.
+
+The PerplexityAI service will return comprehensive, structured information about current AI-related technical jobs in the UK job market, which you can then parse and insert into your DuckDB database.
+
+2. Parse the returned data and insert it into the DuckDB database:
+
+```python
+import duckdb
+import json
+
+# Parse data from PerplexityAI response
+perplexity_response = json.loads(perplexity_result)
+jobs_data = extract_jobs_from_response(perplexity_response)
+
+# Connect to DuckDB and insert data
+con = duckdb.connect('db/uk_jobs.duckdb')
+for job in jobs_data:
+    con.execute('''
+        INSERT OR REPLACE INTO jobs
+        (job_id, title, company, location, salary, description, ai_impact, date_posted, source)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (
+        job["job_id"],
+        job["title"],
+        job["company"],
+        job["location"],
+        job["salary"],
+        job["description"],
+        job["ai_impact"],
+        job["date_posted"],
+        job["source"]
+    ))
+con.close()
+```
+
+3. Alternatively, use the provided script for sample data:
 
 ```bash
-pip install scikit-learn gradio[mcp] mcp
+python db/insert_ai_jobs_duckdb.py
 ```
 
-This installs scikit-learn for the classifier, Gradio with MCP support, and the MCP protocol library ([Gradio][3], [Hugging Face][2]).
+This approach demonstrates how to use Roo Code's MCP capabilities to collect real-time data about AI's impact on the UK job market, directly feeding it into your analytics pipeline.
 
-## Step 2: Define the Scikit-Learn Classifier
+### Running Analytics
 
-Create a file named `mcp_server.py` and add:
-
-```python
-from sklearn.datasets import load_iris
-from sklearn.linear_model import LogisticRegression
-
-# Load data and train
-iris = load_iris()
-clf = LogisticRegression(max_iter=200)
-clf.fit(iris.data, iris.target)
-```
-
-This snippet loads the Iris dataset and trains a logistic regression model on its features and labels ([Gradio][5]).
-
-## Step 3: Create the MCP-Exposed Prediction Function
-
-Below your training code, define a prediction function with a descriptive docstring:
-
-```python
-def predict_species(features: list) -> dict:
-    """
-    Predicts the Iris species given a list of four features:
-    [sepal_length, sepal_width, petal_length, petal_width].
-    Returns a dict with class probabilities.
-    """
-    probs = clf.predict_proba([features])[0]
-    classes = iris.target_names.tolist()
-    return dict(zip(classes, probs))
-```
-
-Gradio will use the docstring to generate the MCP tool specification automatically ([Gradio][1]).
-
-## Step 4: Wrap in a Gradio Blocks App and Enable MCP
-
-Continue editing `mcp_server.py`:
-
-```python
-import gradio as gr
-
-with gr.Blocks() as demo:
-    inp = gr.Textbox(label="Comma-separated features")
-    out = gr.JSON(label="Class probabilities")
-
-    def wrapper(text):
-        features = list(map(float, text.split(",")))
-        return predict_species(features)
-
-    inp.submit(wrapper, inp, out)
-
-demo.launch(server_name="0.0.0.0", server_port=7860, mcp_server=True)
-```
-
-* We’re using Blocks for fine-grained control over input parsing and UI layout. ([Gradio][6])
-* The `mcp_server=True` flag starts both the web UI and an MCP endpoint at `/gradio_api/mcp/sse`. ([Gradio][1], [Hugging Face][2])
-
-## Step 5: Run and Test the MCP Server
-
-Launch the server:
+To run basic analytics and visualizations on the jobs data:
 
 ```bash
-python mcp_server.py
+python db/jobs_analytics_example.py
 ```
 
-In the console you’ll see:
+This script will:
+1. Load data from the DuckDB database
+2. Preprocess the data for machine learning
+3. Run simple clustering and trend analysis on AI impact
+4. Generate visualizations showing the results
 
+The visualization will be saved as `db/job_analytics_results.png`.
+
+### Using the CLI Tool
+
+The project includes a command-line tool for quickly reviewing and filtering job data:
+
+```bash
+# View all jobs
+python scripts/review_uk_jobs.py
+
+# Filter by job title
+python scripts/review_uk_jobs.py --title Engineer
+
+# Filter by company
+python scripts/review_uk_jobs.py --company Google
 ```
- * Running on http://0.0.0.0:7860
- * MCP server URL: http://0.0.0.0:7860/gradio_api/mcp/sse
-```
 
-You can now point any MCP-capable client (e.g., Claude Desktop, Cursor) to that SSE endpoint ([Gradio][4], [Reddit][7]).
+## Advanced Usage
 
-## Step 6: Example Gradio MCP Client
+### Custom Analytics
 
-Optionally, create `mcp_client.py`:
+You can create custom analytics by combining DuckDB's SQL capabilities with scikit-learn:
 
 ```python
-import gradio as gr
-from mcp import Client
+from db.init_duckdb import JobsDatabase
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.cluster import KMeans
 
-client = Client("http://localhost:7860/gradio_api/mcp/sse")
+# Connect to the database
+db = JobsDatabase()
 
-def ask_model(prompt: str):
-    # Calls the MCP tool named "predict_species"
-    response = client.call(
-        tool="predict_species",
-        input={"features": list(map(float, prompt.split(",")))}
-    )
-    return response
+# Query specific data
+df = db.to_dataframe("SELECT * FROM job_postings WHERE ai_impact > 0.7")
 
-iface = gr.Interface(ask_model, gr.Textbox(label="Features"), gr.JSON(label="Prediction"))
-iface.launch()
+# Create text features from job descriptions
+tfidf = TfidfVectorizer(max_features=100, stop_words='english')
+features = tfidf.fit_transform(df['description'])
+
+# Run clustering
+kmeans = KMeans(n_clusters=3, random_state=42)
+df['cluster'] = kmeans.fit_predict(features)
+
+# Analyze results
+cluster_stats = df.groupby('cluster').agg({
+    'ai_impact': ['mean', 'count'],
+    'title': lambda x: ', '.join(set(x))[:100]
+})
+
+print(cluster_stats)
+db.close()
 ```
 
-This Gradio interface uses the MCP Client to invoke the server’s `predict_species` tool dynamically ([Gradio][3], [MCP Servers][8]).
+### Extending the Database
 
-## Next Steps
+You can extend the database schema to include additional information:
 
-* Secure your MCP server by adding authentication or token checks around the `predict_species` call. ([Hugging Face][2])
-* Extend the example to support multiple tools (e.g., regression models, clustering tools) by defining additional functions with docstrings. ([GitHub][9])
-* Deploy on Hugging Face Spaces or another cloud environment using Docker, and set `GRADIO_MCP_SERVER=True` for production builds ([Hugging Face][2]).
+```python
+# Connect to DuckDB
+import duckdb
+con = duckdb.connect('db/uk_jobs.duckdb')
 
-This setup demonstrates how quickly you can turn any Python function—including scikit-learn classifiers—into a tool that LLMs can call via MCP, all within a single Gradio app.
+# Add a new column
+con.execute('''
+    ALTER TABLE jobs ADD COLUMN remote_work BOOLEAN;
+''')
 
-[1]: https://www.gradio.app/guides/building-mcp-server-with-gradio?utm_source=chatgpt.com "Building Mcp Server With Gradio"
-[2]: https://huggingface.co/blog/gradio-mcp?utm_source=chatgpt.com "How to Build an MCP Server with Gradio - Hugging Face"
-[3]: https://www.gradio.app/guides/building-an-mcp-client-with-gradio?utm_source=chatgpt.com "Building An Mcp Client With Gradio"
-[4]: https://www.gradio.app/guides/using-docs-mcp?utm_source=chatgpt.com "Using Docs Mcp - Gradio"
-[5]: https://www.gradio.app/docs?utm_source=chatgpt.com "Gradio Documentation"
-[6]: https://www.gradio.app/docs/gradio/blocks?utm_source=chatgpt.com "Blocks - Gradio Docs"
-[7]: https://www.reddit.com/r/mcp/comments/1kbnoev/build_an_mcp_server_in_a_few_lines_of_python_with/?utm_source=chatgpt.com "Build an MCP server in a few lines of Python with Gradio - Reddit"
-[8]: https://mcpmarket.com/server/gradio-client?utm_source=chatgpt.com "Gradio Client: Tool Interaction for Language Models - MCP Market"
-[9]: https://github.com/justjoehere/mcp_gradio_client?utm_source=chatgpt.com "justjoehere/mcp_gradio_client: This is a proof of concept ... - GitHub"
+# Update existing records
+con.execute('''
+    UPDATE jobs 
+    SET remote_work = (location LIKE '%Remote%')
+''')
+
+con.close()
+```
+
+### Integration with Other Systems
+
+The DuckDB database can be integrated with other systems:
+
+```python
+# Export to CSV
+import duckdb
+con = duckdb.connect('db/uk_jobs.duckdb')
+con.execute('''
+    COPY (SELECT * FROM jobs) TO 'exported_jobs.csv' (HEADER, DELIMITER ',');
+''')
+con.close()
+
+# Export to a different database system
+import duckdb
+import pandas as pd
+import sqlite3
+
+# Extract from DuckDB
+con_duck = duckdb.connect('db/uk_jobs.duckdb')
+df = con_duck.execute("SELECT * FROM jobs").fetch_df()
+con_duck.close()
+
+# Load into SQLite
+con_sqlite = sqlite3.connect('other_system.db')
+df.to_sql('jobs', con_sqlite, if_exists='replace', index=False)
+con_sqlite.close()
+```
+
+## Project Structure
+
+```
+GenAI-Superstream/
+├── db/
+│   ├── init_duckdb.py           # Core database class and utilities
+│   ├── jobs_analytics_example.py # Example analytics and visualization
+│   ├── insert_ai_jobs_duckdb.py # Script to insert representative data
+│   ├── README.md                # Database documentation
+│   └── uk_jobs.duckdb           # The DuckDB database file
+├── scripts/
+│   └── review_uk_jobs.py        # CLI tool to review job data
+├── docs/                        # Project documentation
+├── presentation/                # Presentation materials
+└── README.md                    # This file
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+Created by Reuven Cohen (rUv) - https://github.com/ruvnet/GenAI-Superstream
