@@ -448,7 +448,8 @@ class DataProcessor:
         except Exception as e:
             logger.error(f"Failed to transform job data: {e}")
             return None
-@timed_function
+    
+    @timed_function
     def normalize_location(self, location_text: str) -> str:
         """
         Normalize location information.
@@ -484,7 +485,18 @@ class DataProcessor:
                     # Extract city for hybrid work
                     for city in uk_cities:
                         if city in location_lower:
-@timed_function
+                            return f"{city.title()}, UK (Hybrid)"
+                return "UK (Hybrid)"
+            else:
+                return "Remote, UK"
+        
+        # Default to UK if not already specified
+        if "uk" not in location_lower and "united kingdom" not in location_lower:
+            return f"{location_text}, UK"
+        
+        return location_text
+    
+    @timed_function
     def calculate_ai_impact_metrics(self, job_posting: JobPosting) -> JobPosting:
         """
         Calculate additional AI impact metrics for a job posting.
@@ -575,7 +587,13 @@ class DataProcessor:
             posting_recency=posting_recency,
             automation_risk=automation_risk,
             augmentation_potential=augmentation_potential,
-@timed_function
+            transformation_level=transformation_level
+        )
+        
+        job_posting.ai_metrics = metrics
+        return job_posting
+    
+    @timed_function
     def prepare_for_duckdb_insertion(self, job_postings: List[JobPosting]) -> pd.DataFrame:
         """
         Prepare job postings for insertion into DuckDB.
@@ -664,24 +682,10 @@ class DataProcessor:
         jobs_df = self.prepare_for_duckdb_insertion(all_job_postings)
         skills_df = self.extract_skills_dataframe(all_job_postings)
         
-        return jobs_df, skills_df
-            transformation_level=transformation_level
-        )
-        
         # Update job posting with metrics
-        job_posting.metrics = metrics
+        job_posting.ai_metrics = metrics
         
         return job_posting
-                            return f"{city.title()}, UK (Hybrid)"
-                return "UK (Hybrid)"
-            else:
-                return "Remote, UK"
-        
-        # If no specific matches, ensure UK is mentioned
-        if "uk" not in location_lower and "united kingdom" not in location_lower:
-            return f"{location_text}, UK"
-        
-        return location_text
     
     @timed_function
     def extract_skills(self, description: str, requirements: Optional[str] = None) -> List[Skill]:

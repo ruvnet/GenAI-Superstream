@@ -17,6 +17,7 @@ import seaborn as sns
 from sklearn.decomposition import PCA
 
 from advanced.config import ANALYTICS_CONFIG
+from advanced.db.queries import JobsDatabase
 from advanced.analytics.metrics import (
     calculate_ai_impact_distribution,
     calculate_top_companies,
