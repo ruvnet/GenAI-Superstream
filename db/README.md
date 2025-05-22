@@ -1,10 +1,12 @@
 # UK Jobs Analytics Database with DuckDB
 
-This module provides a database solution for analyzing UK jobs data with a focus on AI's impact on technical roles.
+This module provides a basic database solution for analyzing UK jobs data with a focus on AI's impact on technical roles.
 
 ## Overview
 
 The database is built using DuckDB, a high-performance analytical database system designed for fast queries on structured data. This solution is optimized for analytics workloads and seamless integration with pandas and scikit-learn for machine learning applications.
+
+> **Note**: For advanced features including PerplexityAI MCP integration, enhanced schemas, and sophisticated analytics, see the [`advanced/`](../advanced/) implementation.
 
 ## Features
 
@@ -137,6 +139,44 @@ For more advanced usage examples, see the `jobs_analytics_example.py` file, whic
 - numpy
 - scikit-learn (for analytics examples)
 - matplotlib (for visualizations)
+
+## Advanced Implementation
+
+For enhanced functionality beyond this basic implementation, explore the [`advanced/`](../advanced/) directory which includes:
+
+### Enhanced Features
+- **PerplexityAI MCP Integration**: Real-time data gathering from AI-powered search
+- **Advanced Database Schema**: Extended tables for skills, companies, AI impact metrics, and job history
+- **Sophisticated Analytics**: Clustering analysis, skills importance ranking, salary trend analysis
+- **Command-Line Tools**: Comprehensive CLI for data gathering and analysis
+- **Visualization Capabilities**: Advanced plotting and insights generation
+- **Test Suite**: Complete testing framework for reliability
+
+### Quick Start with Advanced Features
+```bash
+# Initialize advanced database
+python advanced/main.py --init
+
+# Gather data using PerplexityAI MCP
+python advanced/main.py --gather
+
+# Run data gatherer CLI
+python advanced/data_gatherer.py --help
+```
+
+### Schema Comparison
+
+| Feature | Basic Implementation | Advanced Implementation |
+|---------|---------------------|------------------------|
+| Job Storage | Single table | Multiple normalized tables |
+| Skills Tracking | Text fields | Dedicated skills table with categories |
+| Company Data | Basic info | Detailed company profiles with AI focus |
+| AI Impact | Simple score | Comprehensive metrics and categorization |
+| Data Sources | Manual insertion | PerplexityAI MCP integration |
+| Analytics | Basic queries | Machine learning and clustering |
+| Testing | None | Complete test suite |
+
+See [`advanced/README.md`](../advanced/README.md) for complete documentation.
 
 ## Installation
 

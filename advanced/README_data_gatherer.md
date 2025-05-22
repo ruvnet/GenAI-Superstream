@@ -32,7 +32,7 @@ PERPLEXITY_MCP_SERVER_NAME=perplexityai
 PERPLEXITY_MCP_URL=http://localhost:3001
 
 # Database Configuration
-DB_PATH=./duckdb_advance.db
+DB_PATH=./duckdb_advanced.db
 DB_MEMORY_LIMIT=4GB
 DB_THREADS=4
 ```

@@ -19,8 +19,13 @@ This implementation extends the basic DuckDB implementation with:
 advanced/
 ├── __init__.py                # Package initialization
 ├── config.py                  # Configuration settings
+├── data_gatherer.py           # CLI tool for data gathering
 ├── main.py                    # Main entry point
+├── example_mcp_integration.py # MCP integration examples
+├── init_duckdb.py             # Legacy database initialization
+├── .env.sample                # Environment configuration template
 ├── README.md                  # This documentation
+├── README_data_gatherer.md    # Data gatherer documentation
 ├── models/                    # Data models and schemas
 │   ├── __init__.py
 │   ├── data_classes.py        # Data class definitions
@@ -37,10 +42,22 @@ advanced/
 │   ├── __init__.py
 │   ├── helpers.py             # Helper functions
 │   └── logging.py             # Logging configuration
-└── perplexity/                # PerplexityAI integration
-    ├── __init__.py
-    ├── client.py              # PerplexityAI MCP client
-    └── parsers.py             # Response parsing utilities
+├── perplexity/                # PerplexityAI integration
+│   ├── __init__.py
+│   ├── client.py              # PerplexityAI MCP client
+│   ├── data_processor.py      # Data processing utilities
+│   └── parsers.py             # Response parsing utilities
+├── tests/                     # Test suite
+│   ├── __init__.py
+│   ├── conftest.py            # Test configuration
+│   ├── test_client.py         # Client tests
+│   ├── test_config.py         # Configuration tests
+│   ├── test_data_gatherer.py  # Data gatherer tests
+│   ├── test_data_processor.py # Data processor tests
+│   └── FIXES_DOCUMENTATION.md # Test fixes documentation
+├── logs/                      # Log files directory
+├── exports/                   # Export files directory
+└── visualizations/            # Generated visualizations directory
 ```
 
 ## Key Features
@@ -87,13 +104,40 @@ The implementation includes sophisticated analytics capabilities:
 
 ### Prerequisites
 
-- Python 3.6+
-- Required packages: duckdb, pandas, numpy, scikit-learn, matplotlib, seaborn
+- Python 3.8+
+- Required packages: duckdb, pandas, numpy, scikit-learn, matplotlib, seaborn, python-dotenv
 
 ### Install Required Packages
 
 ```bash
-pip install duckdb pandas numpy scikit-learn matplotlib seaborn
+pip install duckdb pandas numpy scikit-learn matplotlib seaborn python-dotenv
+```
+
+### Configuration
+
+Copy the environment configuration template and customize as needed:
+
+```bash
+cp advanced/.env.sample advanced/.env
+```
+
+Edit `advanced/.env` to configure:
+
+```env
+# Database Configuration
+DB_PATH=./duckdb_advanced.db
+DB_MEMORY_LIMIT=4GB
+DB_THREADS=4
+DB_CACHE_ENABLED=True
+DB_CACHE_SIZE=100
+
+# Logging Configuration
+LOG_FILE=./logs/jobs_db.log
+LOG_LEVEL=INFO
+
+# PerplexityAI MCP Configuration
+PERPLEXITY_MCP_SERVER_NAME=perplexityai
+PERPLEXITY_MCP_URL=http://localhost:3001
 ```
 
 ## Usage
@@ -191,20 +235,44 @@ for path in viz_paths:
 
 ### Using the Command-Line Interface
 
-The implementation includes a command-line interface for common operations:
+The implementation includes multiple command-line interfaces for different operations:
+
+#### Main Entry Point
 
 ```bash
 # Initialize the database
-python -m advanced.main --init
+python advanced/main.py --init
 
 # Prepare a query for PerplexityAI
-python -m advanced.main --gather
+python advanced/main.py --gather
 
 # Process a PerplexityAI response
-python -m advanced.main --response-file=response.json
+python advanced/main.py --response-file=response.json
 
 # Run a demonstration with sample data
-python -m advanced.main
+python advanced/main.py
+```
+
+#### Data Gatherer CLI
+
+```bash
+# Initialize database with enhanced schema
+python advanced/data_gatherer.py --init
+
+# Gather data with default query
+python advanced/data_gatherer.py --gather
+
+# Gather data with specific role and location
+python advanced/data_gatherer.py --gather --role "Machine Learning Engineer" --location "London"
+
+# Gather data with custom query
+python advanced/data_gatherer.py --gather --query "What are the highest paying AI jobs in Manchester?"
+
+# View database statistics
+python advanced/data_gatherer.py --stats
+
+# Dry run mode (preview without execution)
+python advanced/data_gatherer.py --gather --dry-run
 ```
 
 ## PerplexityAI MCP Data Gathering
@@ -377,6 +445,44 @@ def calculate_remote_vs_office_comparison(db: JobsDatabase) -> pd.DataFrame:
     return db.to_dataframe(query)
 ```
 
+## Testing
+
+The advanced implementation includes a comprehensive test suite to ensure reliability and correctness:
+
+```bash
+# Run all tests
+python -m pytest advanced/tests/
+
+# Run specific test files
+python -m pytest advanced/tests/test_client.py
+python -m pytest advanced/tests/test_data_gatherer.py
+
+# Run with coverage
+python -m pytest advanced/tests/ --cov=advanced
+
+# Run with verbose output
+python -m pytest advanced/tests/ -v
+```
+
+### Test Coverage
+
+The test suite covers:
+
+- **Configuration Management**: Environment variable loading and validation
+- **Database Operations**: Connection management, schema creation, data insertion
+- **PerplexityAI Integration**: Client functionality and response parsing
+- **Data Processing**: Job data transformation and validation
+- **Data Gatherer CLI**: Command-line interface functionality
+- **Error Handling**: Various failure scenarios and edge cases
+
+### Test Files
+
+- [`test_config.py`](tests/test_config.py): Configuration system tests
+- [`test_client.py`](tests/test_client.py): PerplexityAI client tests
+- [`test_data_processor.py`](tests/test_data_processor.py): Data processing tests
+- [`test_data_gatherer.py`](tests/test_data_gatherer.py): CLI tool tests
+- [`conftest.py`](tests/conftest.py): Shared test fixtures and configuration
+
 ## Future Enhancements
 
 Potential future enhancements to this implementation:
@@ -387,6 +493,8 @@ Potential future enhancements to this implementation:
 4. **Integration with more data sources**: Combine data from multiple sources
 5. **Natural language querying**: Allow users to ask questions in natural language
 6. **Automated reporting**: Generate periodic reports on job market trends
+7. **API endpoints**: REST API for accessing job data and analytics
+8. **Automated data quality monitoring**: Continuous validation of data integrity
 
 ## Conclusion
 

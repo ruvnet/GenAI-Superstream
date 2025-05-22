@@ -27,6 +27,11 @@
   - [Custom Analytics](#custom-analytics)
   - [Extending the Database](#extending-the-database)
   - [Integration with Other Systems](#integration-with-other-systems)
+- [Advanced Implementation](#advanced-implementation)
+  - [PerplexityAI MCP Integration](#perplexityai-mcp-integration)
+  - [Enhanced Schema and Analytics](#enhanced-schema-and-analytics)
+  - [Command-Line Tools](#command-line-tools)
+- [MCP Server](#mcp-server)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
@@ -140,8 +145,31 @@ The project demonstrates how to integrate DuckDB with scikit-learn for advanced 
 
 ### Prerequisites
 
-- Python 3.6+
+- Python 3.8+ (3.6+ for basic implementation)
 - pip (Python package manager)
+
+### Dependencies
+
+The project uses different dependency sets depending on the implementation:
+
+**Basic Implementation (`db/` directory):**
+- `duckdb` - High-performance analytical database
+- `pandas` - Data manipulation and analysis
+- `numpy` - Numerical computing
+- `scikit-learn` - Machine learning library
+- `matplotlib` - Plotting and visualization
+- `tabulate` - Pretty-print tabular data
+
+**Advanced Implementation (`advanced/` directory):**
+- All basic dependencies plus:
+- `seaborn` - Statistical data visualization
+- `python-dotenv` - Environment variable management
+
+**MCP Server (`genai-mcp/` directory):**
+- `mcp` - Model Context Protocol framework
+- `gradio` - Web-based UI framework
+- `pytest` - Testing framework
+- `pyyaml` - YAML configuration support
 
 ### Installation
 
@@ -152,11 +180,24 @@ The project demonstrates how to integrate DuckDB with scikit-learn for advanced 
    ```
 
 2. Install the required dependencies:
+
+   **Basic Implementation:**
    ```bash
    pip install duckdb pandas numpy scikit-learn matplotlib tabulate
    ```
 
-3. Optional: Install the Roo Code extension for VS Code:
+   **Advanced Implementation (recommended):**
+   ```bash
+   pip install duckdb pandas numpy scikit-learn matplotlib seaborn python-dotenv
+   ```
+
+3. Set up the MCP server (optional):
+   ```bash
+   cd genai-mcp
+   make setup
+   ```
+
+4. Optional: Install the Roo Code extension for VS Code:
    - Open VS Code
    - Go to Extensions view
    - Search for Roo Code
@@ -375,21 +416,120 @@ df.to_sql('jobs', con_sqlite, if_exists='replace', index=False)
 con_sqlite.close()
 ```
 
+## Advanced Implementation
+
+The `advanced/` directory contains an enhanced implementation of the GenAI-Superstream project with advanced features including PerplexityAI MCP integration, enhanced database schemas, and sophisticated analytics capabilities.
+
+### PerplexityAI MCP Integration
+
+The advanced implementation includes integration with PerplexityAI through the Model Context Protocol (MCP), enabling real-time data gathering from AI-powered search:
+
+```bash
+# Initialize the advanced database
+python advanced/main.py --init
+
+# Gather data from PerplexityAI (prepares MCP query)
+python advanced/main.py --gather
+
+# Process PerplexityAI response
+python advanced/main.py --response-file=response.json
+```
+
+The PerplexityAI integration allows you to:
+- Query for the latest UK AI job market trends
+- Extract structured job data from search results
+- Automatically parse and store job information
+- Track data sources and maintain quality metrics
+
+### Enhanced Schema and Analytics
+
+The advanced implementation features:
+
+- **Comprehensive Job Schema**: Enhanced job postings table with detailed fields for salary ranges, remote work options, AI impact metrics, and skills tracking
+- **Skills Analysis**: Separate skills table for tracking required vs. preferred skills with categories
+- **Company Tracking**: Company information with AI focus levels
+- **Historical Data**: Job history tracking for trend analysis
+- **Advanced Analytics**: Clustering, skills importance analysis, salary trends, and visualization capabilities
+
+Example analytics usage:
+
+```python
+from advanced.analytics.metrics import calculate_ai_impact_distribution, perform_cluster_analysis
+from advanced.db.queries import JobsDatabase
+
+db = JobsDatabase()
+
+# Get AI impact distribution
+impact_df = calculate_ai_impact_distribution(db)
+
+# Perform cluster analysis
+df_with_clusters, cluster_stats = perform_cluster_analysis(db, n_clusters=4)
+```
+
+### Command-Line Tools
+
+The advanced implementation provides comprehensive CLI tools:
+
+```bash
+# Data gathering with flexible options
+python advanced/data_gatherer.py --gather --role "Machine Learning Engineer" --location "London"
+
+# View database statistics
+python advanced/data_gatherer.py --stats
+
+# Dry run mode to preview operations
+python advanced/data_gatherer.py --gather --dry-run
+```
+
+See [`advanced/README.md`](advanced/README.md) for detailed documentation of the advanced features.
+
+## MCP Server
+
+The project includes a complete MCP (Model Context Protocol) server implementation in the `genai-mcp/` directory:
+
+- **Tools**: Functions for data analysis and job market queries
+- **Resources**: Access to job data and analytics results
+- **Prompts**: Templates for AI-powered job market analysis
+- **Server-Sent Events**: Real-time updates and monitoring
+
+To run the MCP server:
+
+```bash
+cd genai-mcp
+make setup
+make dev
+```
+
+The MCP server enables seamless integration with AI assistants and other MCP-compatible applications. See [`genai-mcp/README.md`](genai-mcp/README.md) for complete setup and usage instructions.
+
 ## Project Structure
 
 ```
 GenAI-Superstream/
-├── db/
-│   ├── init_duckdb.py           # Core database class and utilities
+├── advanced/                    # Advanced implementation with MCP integration
+│   ├── analytics/              # Advanced analytics and visualizations
+│   ├── db/                     # Database operations and queries
+│   ├── models/                 # Data models and database schemas
+│   ├── perplexity/             # PerplexityAI MCP integration
+│   ├── tests/                  # Comprehensive test suite
+│   ├── utils/                  # Utility functions and logging
+│   ├── data_gatherer.py        # CLI tool for data gathering
+│   ├── main.py                 # Main entry point
+│   └── README.md               # Advanced implementation documentation
+├── db/                         # Basic DuckDB implementation
+│   ├── init_duckdb.py          # Core database class and utilities
 │   ├── jobs_analytics_example.py # Example analytics and visualization
 │   ├── insert_ai_jobs_duckdb.py # Script to insert representative data
-│   ├── README.md                # Database documentation
-│   └── uk_jobs.duckdb           # The DuckDB database file
-├── scripts/
-│   └── review_uk_jobs.py        # CLI tool to review job data
-├── docs/                        # Project documentation
-├── presentation/                # Presentation materials
-└── README.md                    # This file
+│   ├── README.md               # Database documentation
+│   └── uk_jobs.duckdb          # The DuckDB database file
+├── genai-mcp/                  # MCP server implementation
+│   ├── genai_mcp/              # Server source code
+│   ├── sse_server.py           # Server-sent events server
+│   └── README.md               # MCP server documentation
+├── docs/                       # Project documentation
+├── presentation/               # Presentation materials
+├── scripts/                    # Utility scripts
+└── README.md                   # This file
 ```
 
 ## Contributing
