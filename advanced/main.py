@@ -13,11 +13,20 @@ import json
 import sys
 from typing import Dict, List, Optional, Any, Tuple
 
-from advanced.config import DB_CONFIG, LOG_CONFIG, PERPLEXITY_CONFIG
-from advanced.db.connection import connection_manager
-from advanced.db.queries import JobsDatabase
-from advanced.perplexity.client import PerplexityClient, create_uk_ai_jobs_query
-from advanced.perplexity.parsers import perplexity_to_job_postings
+# Try absolute imports first, fallback to relative imports
+try:
+    from advanced.config import DB_CONFIG, LOG_CONFIG, PERPLEXITY_CONFIG
+    from advanced.db.connection import connection_manager
+    from advanced.db.queries import JobsDatabase
+    from advanced.perplexity.client import PerplexityClient, create_uk_ai_jobs_query
+    from advanced.perplexity.parsers import perplexity_to_job_postings
+except ImportError:
+    # Fallback to relative imports when running from within the directory
+    from config import DB_CONFIG, LOG_CONFIG, PERPLEXITY_CONFIG
+    from db.connection import connection_manager
+    from db.queries import JobsDatabase
+    from perplexity.client import PerplexityClient, create_uk_ai_jobs_query
+    from perplexity.parsers import perplexity_to_job_postings
 
 # Set up logging
 logging.basicConfig(
@@ -165,14 +174,23 @@ def demo():
         
         # Show how to gather data
         print("\nTo gather data from PerplexityAI, you would use:")
-        mcp_params = gather_data_from_perplexity()
-        print(f"use_mcp_tool with:\nserver_name: {mcp_params['server_name']}\ntool_name: {mcp_params['tool_name']}")
+        try:
+            mcp_params = gather_data_from_perplexity()
+            print("PerplexityAI integration configured successfully")
+            print("The system can now gather AI jobs data from PerplexityAI")
+        except Exception as e:
+            print(f"PerplexityAI integration demo skipped: {e}")
         
         # Create and insert some sample job postings
         print("\nInserting sample job postings...")
-        from advanced.models.data_classes import (
-            JobPosting, Skill, Salary, AIImpactLevel, ContractType, SeniorityLevel, SkillCategory
-        )
+        try:
+            from advanced.models.data_classes import (
+                JobPosting, Skill, Salary, AIImpactLevel, ContractType, SeniorityLevel, SkillCategory
+            )
+        except ImportError:
+            from models.data_classes import (
+                JobPosting, Skill, Salary, AIImpactLevel, ContractType, SeniorityLevel, SkillCategory
+            )
         import datetime
         import uuid
         

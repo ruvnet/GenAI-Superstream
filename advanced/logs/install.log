@@ -1,0 +1,27 @@
+Installation started at 2025-05-22 20:26:18
+[2025-05-22 20:26:18] [INFO] Checking prerequisites...
+[2025-05-22 20:26:18] [INFO] Checking Python version...
+[2025-05-22 20:26:18] [SUCCESS] Python 3.12.1 detected
+[2025-05-22 20:26:18] [INFO] Creating necessary directories...
+[2025-05-22 20:26:18] [INFO] Created directory: logs
+[2025-05-22 20:26:18] [INFO] Created directory: exports
+[2025-05-22 20:26:18] [INFO] Created directory: visualizations
+[2025-05-22 20:26:18] [INFO] Created directory: data
+[2025-05-22 20:26:18] [INFO] Created directory: backups
+[2025-05-22 20:26:18] [SUCCESS] All directories created
+[2025-05-22 20:26:18] [SUCCESS] Virtual environment found
+[2025-05-22 20:26:18] [INFO] Upgrading pip...
+[2025-05-22 20:26:19] [SUCCESS] Pip upgraded
+[2025-05-22 20:26:19] [INFO] Installing Python packages...
+[2025-05-22 20:26:19] [SUCCESS] All Python packages installed
+[2025-05-22 20:26:19] [INFO] Checking environment configuration...
+[2025-05-22 20:26:19] [SUCCESS] .env file found
+[2025-05-22 20:26:19] [INFO] Checking database status...
+[2025-05-22 20:26:19] [WARNING] Database file already exists
+[2025-05-22 20:26:19] [INFO] Keeping existing database
+[2025-05-22 20:26:19] [SUCCESS] Installation completed successfully!
+[2025-05-22 20:26:19] [INFO] Next steps:
+[2025-05-22 20:26:19] [INFO] Available commands:
+[2025-05-22 20:26:19] [INFO] Installation log saved to: /workspaces/GenAI-Superstream/advanced/logs/install.log
+Installation completed at 2025-05-22 20:26:19
+[2025-05-22 20:26:19] [SUCCESS] Installation completed successfully!

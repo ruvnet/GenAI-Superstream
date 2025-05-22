@@ -1,0 +1,29 @@
+# Core dependencies for Advanced DuckDB Implementation
+duckdb>=0.9.0
+pandas>=1.5.0
+numpy>=1.20.0
+scikit-learn>=1.0.0
+python-dotenv>=0.19.0
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-asyncio>=0.21.0
+
+# Visualization dependencies
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# Web and API dependencies
+requests>=2.28.0
+aiohttp>=3.8.0
+
+# Data validation and serialization
+pydantic>=1.10.0
+typing-extensions>=4.0.0
+
+# Optional: Development tools
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.991

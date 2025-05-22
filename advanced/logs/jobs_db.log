@@ -2286,3 +2286,42 @@ CREATE TABLE IF NOT EXISTS data_quality_metrics (...
 2025-05-22 19:55:56,957 - advanced.perplexity.data_processor - INFO - No structured data found, trying to extract unstructured data
 2025-05-22 19:55:56,957 - advanced.perplexity.data_processor - INFO - Extracted 0 job entries from unstructured text
 2025-05-22 19:55:56,957 - advanced.perplexity.data_processor - INFO - Extracted 0 job postings from response
+2025-05-22 20:29:48,150 - __main__ - INFO - Initializing database...
+2025-05-22 20:29:48,495 - advanced.db.connection - INFO - Connected to database at ./duckdb_advanced.db with optimized settings
+2025-05-22 20:29:48,544 - advanced.db.queries - INFO - Advanced database schema initialized successfully
+2025-05-22 20:29:48,545 - __main__ - INFO - Database initialization complete
+2025-05-22 20:29:48,560 - advanced.db.connection - INFO - Database connection closed
+2025-05-22 20:29:58,747 - __main__ - INFO - Initializing database...
+2025-05-22 20:29:58,767 - advanced.db.connection - INFO - Connected to database at ./duckdb_advanced.db with optimized settings
+2025-05-22 20:29:58,788 - advanced.db.queries - INFO - Advanced database schema initialized successfully
+2025-05-22 20:29:58,788 - __main__ - INFO - Database initialization complete
+2025-05-22 20:29:58,788 - __main__ - INFO - Preparing to gather data from PerplexityAI...
+2025-05-22 20:29:58,788 - advanced.perplexity.client - INFO - PerplexityClient initialized with server: perplexityai, URL: https://mcp.composio.dev/composio/server/639cb323-8245-493a-a808-7fdf217cc865
+2025-05-22 20:29:58,788 - advanced.perplexity.client - INFO - Sending query to PerplexityAI: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job ...
+2025-05-22 20:29:58,788 - advanced.perplexity.client - INFO - Connecting to SSE MCP endpoint: https://mcp.composio.dev/composio/server/639cb323-8245-493a-a808-7fdf217cc865
+2025-05-22 20:29:59,239 - advanced.perplexity.client - INFO - Found session endpoint: /messages?sessionId=783f90e8-39f5-4ee8-a90e-1412d43c16ff
+2025-05-22 20:29:59,239 - advanced.perplexity.client - INFO - Sending tool request to: https://mcp.composio.dev/messages?sessionId=783f90e8-39f5-4ee8-a90e-1412d43c16ff
+2025-05-22 20:29:59,548 - advanced.perplexity.client - INFO - Received MCP response with status: 200
+2025-05-22 20:29:59,548 - advanced.perplexity.client - INFO - Successfully received response from PerplexityAI
+2025-05-22 20:29:59,549 - __main__ - INFO - PerplexityAI query prepared
+2025-05-22 20:29:59,549 - __main__ - ERROR - Error in demo function: 'server_name'
+2025-05-22 20:29:59,566 - advanced.db.connection - INFO - Database connection closed
+2025-05-22 20:30:42,242 - __main__ - INFO - Initializing database...
+2025-05-22 20:30:42,262 - advanced.db.connection - INFO - Connected to database at ./duckdb_advanced.db with optimized settings
+2025-05-22 20:30:42,274 - advanced.db.queries - INFO - Advanced database schema initialized successfully
+2025-05-22 20:30:42,274 - __main__ - INFO - Database initialization complete
+2025-05-22 20:30:42,274 - __main__ - INFO - Preparing to gather data from PerplexityAI...
+2025-05-22 20:30:42,274 - advanced.perplexity.client - INFO - PerplexityClient initialized with server: perplexityai, URL: https://mcp.composio.dev/composio/server/639cb323-8245-493a-a808-7fdf217cc865
+2025-05-22 20:30:42,275 - advanced.perplexity.client - INFO - Sending query to PerplexityAI: What are the latest trends in AI technical jobs in the UK? Please provide comprehensive data on job ...
+2025-05-22 20:30:42,275 - advanced.perplexity.client - INFO - Connecting to SSE MCP endpoint: https://mcp.composio.dev/composio/server/639cb323-8245-493a-a808-7fdf217cc865
+2025-05-22 20:30:42,797 - advanced.perplexity.client - INFO - Found session endpoint: /messages?sessionId=41a7826c-fff6-4d8c-929c-84090b459258
+2025-05-22 20:30:42,797 - advanced.perplexity.client - INFO - Sending tool request to: https://mcp.composio.dev/messages?sessionId=41a7826c-fff6-4d8c-929c-84090b459258
+2025-05-22 20:30:43,109 - advanced.perplexity.client - INFO - Received MCP response with status: 200
+2025-05-22 20:30:43,109 - advanced.perplexity.client - INFO - Successfully received response from PerplexityAI
+2025-05-22 20:30:43,110 - __main__ - INFO - PerplexityAI query prepared
+2025-05-22 20:30:43,133 - advanced.db.queries - ERROR - Failed to insert job posting: TransactionContext Error: cannot start a transaction within a transaction
+2025-05-22 20:30:43,133 - advanced.db.queries - ERROR - Failed to insert job JOB-adea5cc8: TransactionContext Error: cannot start a transaction within a transaction
+2025-05-22 20:30:43,140 - advanced.db.queries - ERROR - Failed to insert job posting: Constraint Error: NOT NULL constraint failed: job_skills.id
+2025-05-22 20:30:43,140 - advanced.db.queries - ERROR - Failed to insert job JOB-ee43b083: Constraint Error: NOT NULL constraint failed: job_skills.id
+2025-05-22 20:30:43,141 - __main__ - ERROR - Error in demo function: TransactionContext Error: cannot rollback - no transaction is active
+2025-05-22 20:30:43,159 - advanced.db.connection - INFO - Database connection closed
