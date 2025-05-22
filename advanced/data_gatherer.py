@@ -73,7 +73,7 @@ class DataGatherer:
                 
                 logger.info("Database initialization completed successfully")
     
-    def gather_data(self, 
+    def gather_data(self,
                    query: Optional[str] = None,
                    role: Optional[str] = None,
                    location: Optional[str] = None,
@@ -111,17 +111,19 @@ class DataGatherer:
                 logger.info(f"  Batch size: {batch_size}")
                 return []
             
-            # Prepare the query parameters
-            query_params = self.client.query_perplexity(perplexity_query)
-            
-            # Note: The actual MCP tool call would be handled by the calling code
-            # For now, we'll return the query parameters
-            logger.info("Query parameters prepared for PerplexityAI MCP tool")
-            logger.info(f"Server: {query_params['server_name']}")
-            logger.info(f"Tool: {query_params['tool_name']}")
-            
-            # Return empty list as actual data would come from MCP tool response
-            return []
+            try:
+                # Make the actual request to PerplexityAI
+                response_data = self.client.query_perplexity(perplexity_query)
+                
+                # Process the response to extract job postings
+                job_postings = self.process_perplexity_response(response_data)
+                
+                logger.info(f"Successfully gathered {len(job_postings)} job postings from PerplexityAI")
+                return job_postings
+                
+            except Exception as e:
+                logger.error(f"Failed to gather data from PerplexityAI: {e}")
+                return []
     
     def process_perplexity_response(self, response_data: Dict[str, Any]) -> List[JobPosting]:
         """
@@ -393,11 +395,9 @@ Examples:
             gatherer.initialize_database()
         
         if args.gather:
-            # Note: In a real implementation, this would need to integrate with
-            # the MCP tool system to actually fetch data from PerplexityAI
             logger.info("Gathering data from PerplexityAI...")
             
-            # Prepare the query
+            # Gather the data
             job_postings = gatherer.gather_data(
                 query=args.query,
                 role=args.role,
@@ -406,16 +406,12 @@ Examples:
                 batch_size=args.batch_size
             )
             
-            if not args.dry_run:
-                logger.warning(
-                    "Note: Actual PerplexityAI integration requires MCP tool execution. "
-                    "Please use the prepared query parameters with the MCP system."
-                )
-                
-                # Example of how to process a response (would come from MCP tool)
-                # response_data = {...}  # This would come from MCP tool execution
-                # job_postings = gatherer.process_perplexity_response(response_data)
-                # gatherer.insert_jobs_to_database(job_postings)
+            # Insert gathered data into database
+            if job_postings and not args.dry_run:
+                inserted_count = gatherer.insert_jobs_to_database(job_postings)
+                logger.info(f"Successfully inserted {inserted_count} job postings into the database")
+            elif not job_postings and not args.dry_run:
+                logger.warning("No job postings were gathered to insert into the database")
         
         if args.stats:
             gatherer.show_statistics()

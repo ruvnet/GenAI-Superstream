@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS job_skills (
     skill_category VARCHAR,  -- Technical, soft skill, tool, etc.
     is_required BOOLEAN,  -- Required vs. preferred
     experience_years INTEGER,  -- Required years of experience
-    FOREIGN KEY (job_id) REFERENCES job_postings(job_id) ON DELETE CASCADE,
+    FOREIGN KEY (job_id) REFERENCES job_postings(job_id),
     UNIQUE(job_id, skill_name)
 )
 """
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS job_history (
     old_value TEXT,
     new_value TEXT,
     event_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (job_id) REFERENCES job_postings(job_id) ON DELETE CASCADE
+    FOREIGN KEY (job_id) REFERENCES job_postings(job_id)
 )
 """
 
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS ai_impact_metrics (
     analysis_date DATE NOT NULL,
     analysis_method VARCHAR,  -- How the metrics were derived
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (job_id) REFERENCES job_postings(job_id) ON DELETE CASCADE
+    FOREIGN KEY (job_id) REFERENCES job_postings(job_id)
 )
 """
 

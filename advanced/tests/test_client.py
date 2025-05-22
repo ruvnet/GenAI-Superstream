@@ -63,30 +63,88 @@ class TestPerplexityClientInitialization:
 class TestQueryPreparation:
     """Test query preparation methods."""
     
-    def test_query_perplexity_basic(self, perplexity_client):
-        """Test basic query preparation."""
+    @patch('advanced.perplexity.client.requests.get')
+    @patch('advanced.perplexity.client.requests.post')
+    def test_query_perplexity_basic(self, mock_post, mock_get, perplexity_client):
+        """Test basic query preparation with mocked HTTP requests."""
         query = "What are AI jobs in London?"
+        
+        # Mock the SSE connection
+        mock_sse_response = Mock()
+        mock_sse_response.raise_for_status.return_value = None
+        mock_sse_response.iter_lines.return_value = [
+            "event: endpoint",
+            "data: /messages/test-session-id"
+        ]
+        mock_get.return_value = mock_sse_response
+        
+        # Mock the tool call response
+        mock_tool_response = Mock()
+        mock_tool_response.raise_for_status.return_value = None
+        mock_tool_response.json.return_value = {
+            "result": {
+                "content": "Mocked response content",
+                "id": "test-response-id",
+                "citations": []
+            }
+        }
+        mock_tool_response.status_code = 200
+        mock_post.return_value = mock_tool_response
         
         result = perplexity_client.query_perplexity(query)
         
         assert isinstance(result, dict)
-        assert 'server_name' in result
-        assert 'tool_name' in result
-        assert 'arguments' in result
+        assert 'content' in result
+        assert result['content'] == "Mocked response content"
         
-        arguments = result['arguments']
+        # Verify the POST request was made with correct parameters
+        mock_post.assert_called_once()
+        call_args = mock_post.call_args
+        request_data = call_args[1]['json']
+        
+        assert request_data['method'] == 'tools/call'
+        assert request_data['params']['name'] == 'PERPLEXITYAI_PERPLEXITY_AI_SEARCH'
+        
+        arguments = request_data['params']['arguments']
         assert arguments['userContent'] == query
         assert 'systemContent' in arguments
         assert 'temperature' in arguments
         assert 'max_tokens' in arguments
         assert 'return_citations' in arguments
     
-    def test_query_perplexity_parameters(self, perplexity_client):
+    @patch('advanced.perplexity.client.requests.get')
+    @patch('advanced.perplexity.client.requests.post')
+    def test_query_perplexity_parameters(self, mock_post, mock_get, perplexity_client):
         """Test that query includes all required parameters."""
         query = "Test query"
         
+        # Mock the SSE connection
+        mock_sse_response = Mock()
+        mock_sse_response.raise_for_status.return_value = None
+        mock_sse_response.iter_lines.return_value = [
+            "event: endpoint",
+            "data: /messages/test-session-id"
+        ]
+        mock_get.return_value = mock_sse_response
+        
+        # Mock the tool call response
+        mock_tool_response = Mock()
+        mock_tool_response.raise_for_status.return_value = None
+        mock_tool_response.json.return_value = {
+            "result": {
+                "content": "Test response",
+                "id": "test-id"
+            }
+        }
+        mock_tool_response.status_code = 200
+        mock_post.return_value = mock_tool_response
+        
         result = perplexity_client.query_perplexity(query)
-        arguments = result['arguments']
+        
+        # Verify the request was made with correct parameters
+        call_args = mock_post.call_args
+        request_data = call_args[1]['json']
+        arguments = request_data['params']['arguments']
         
         assert arguments['systemContent'] == perplexity_client.system_prompt
         assert arguments['userContent'] == query
@@ -94,11 +152,38 @@ class TestQueryPreparation:
         assert arguments['max_tokens'] == perplexity_client.max_tokens
         assert arguments['return_citations'] == perplexity_client.return_citations
     
-    def test_query_perplexity_tool_name(self, perplexity_client):
+    @patch('advanced.perplexity.client.requests.get')
+    @patch('advanced.perplexity.client.requests.post')
+    def test_query_perplexity_tool_name(self, mock_post, mock_get, perplexity_client):
         """Test that correct tool name is used."""
+        # Mock the SSE connection
+        mock_sse_response = Mock()
+        mock_sse_response.raise_for_status.return_value = None
+        mock_sse_response.iter_lines.return_value = [
+            "event: endpoint",
+            "data: /messages/test-session-id"
+        ]
+        mock_get.return_value = mock_sse_response
+        
+        # Mock the tool call response
+        mock_tool_response = Mock()
+        mock_tool_response.raise_for_status.return_value = None
+        mock_tool_response.json.return_value = {
+            "result": {
+                "content": "Test response",
+                "id": "test-id"
+            }
+        }
+        mock_tool_response.status_code = 200
+        mock_post.return_value = mock_tool_response
+        
         result = perplexity_client.query_perplexity("test")
         
-        assert result['tool_name'] == "PERPLEXITYAI_PERPLEXITY_AI_SEARCH"
+        # Verify the correct tool name was used
+        call_args = mock_post.call_args
+        request_data = call_args[1]['json']
+        
+        assert request_data['params']['name'] == "PERPLEXITYAI_PERPLEXITY_AI_SEARCH"
     
     def test_create_uk_ai_jobs_query_basic(self):
         """Test basic UK AI jobs query creation."""
@@ -474,9 +559,32 @@ class TestErrorHandling:
 class TestLogging:
     """Test logging functionality."""
     
+    @patch('advanced.perplexity.client.requests.get')
+    @patch('advanced.perplexity.client.requests.post')
     @patch('advanced.perplexity.client.logger')
-    def test_query_perplexity_logging(self, mock_logger, perplexity_client):
+    def test_query_perplexity_logging(self, mock_logger, mock_post, mock_get, perplexity_client):
         """Test that query preparation logs appropriately."""
+        # Mock the SSE connection
+        mock_sse_response = Mock()
+        mock_sse_response.raise_for_status.return_value = None
+        mock_sse_response.iter_lines.return_value = [
+            "event: endpoint",
+            "data: /messages/test-session-id"
+        ]
+        mock_get.return_value = mock_sse_response
+        
+        # Mock the tool call response
+        mock_tool_response = Mock()
+        mock_tool_response.raise_for_status.return_value = None
+        mock_tool_response.json.return_value = {
+            "result": {
+                "content": "Test response",
+                "id": "test-id"
+            }
+        }
+        mock_tool_response.status_code = 200
+        mock_post.return_value = mock_tool_response
+        
         perplexity_client.query_perplexity("test query")
         
         mock_logger.info.assert_called()
