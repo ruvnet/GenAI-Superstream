@@ -1,10 +1,9 @@
-# Python-specific
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -16,26 +15,216 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb_checkpoints/
 
-# Virtual environments
-venv/
-ENV/
+# pyenv
+.python-version
 
-# IDE
-.idea/
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582
+__pypackages__/
+
+# Environments
+.env
+.env.local
+.env.*.local
+
+# IDEs and Editors
 .vscode/
+.idea/
 *.swp
 *.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
 
-# Project-specific
-logs/*.log
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.duckdb.wal
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Node
+node_modules/
+jspm_packages/
+web_modules/
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Output directories
+out/
+tmp/
+temp/
+output/
+results/
+
+# Test coverage
+coverage/
+.nyc_output/
+test-results/
+junit.xml
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+site/
+
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+.env.*
+!.env.example
+config/secrets.yml
+
+# Data files (customize based on your needs)
+data/
+*.csv
+*.parquet
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!mcp.json
+*.xlsx
+*.xls
+
+# Model files
+models/
+*.h5
 *.pkl
-models/*.pkl
-!models/.gitkeep
-!logs/.gitkeep
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.caffemodel
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# MCP specific
+mcp-servers/
+.mcp/
+
+# Project specific
+uk_jobs.duckdb
+uk_jobs.duckdb.wal
+job_analytics_results.png
+exported_jobs.csv
+other_system.db
+
+# Keep important config files
+!.gitignore
+!.gitkeep
+!requirements.txt
+!setup.py
+!README.md
+!README_tutorial.md
+!LICENSE
+
+# Gradio
+gradio_cached_examples/
+flagged/
+
+# Advanced directory specific ignores
+advanced/.env
+advanced/.env.*
+advanced/__pycache__/
+advanced/data/
+advanced/logs/
+advanced/tmp/
+advanced/test_data/
+
+# Generated files
+scc_output.txt
+*.generated.*
